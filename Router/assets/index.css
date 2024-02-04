@@ -1,0 +1,27 @@
+.my-nav-bar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.my-navbar-item{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+}
+.my-navbar-item a {
+    text-decoration: none;
+}
+
+.my-navbar-item a:hover {
+    background-color: #111;
+}
+body{
+    margin: 0;
+
+}

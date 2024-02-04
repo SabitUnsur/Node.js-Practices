@@ -1,0 +1,57 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Person {
+  id      Int      @id @default(autoincrement())
+  email   String   @db.VarChar(150) @default("abc@mail.com") @unique
+  name    String?  @default("ali")
+  age     Int       @default(20)
+  birth_date DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  createAt DateTime  @default(now())
+}
+
+model Lesson{
+    id      Int      @id @default(autoincrement())
+    lesson_name String
+    student_id Int
+    student Student @relation(fields: [student_id],references: [id],onDelete: Cascade,onUpdate: SetNull)
+}
+model Student {
+   id      Int      @id @default(autoincrement())
+   name String
+   last_name String
+   student_no  String @default(uuid())
+   lessons Lesson[]
+}
+
+
+model Post {
+  id         Int                 @id @default(autoincrement())
+  title      String
+  categories CategoriesOnPosts[]
+}
+
+model Category {
+  id    Int                 @id @default(autoincrement())
+  name  String
+  posts CategoriesOnPosts[]
+}
+
+model CategoriesOnPosts {
+  post       Post     @relation(fields: [postId], references: [id])
+  postId     Int
+  category   Category @relation(fields: [categoryId], references: [id])
+  categoryId Int
+  assignedAt DateTime @default(now())
+  @@id([postId, categoryId])
+}
