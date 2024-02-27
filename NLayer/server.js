@@ -4,6 +4,8 @@ const db = require('./db/index')
 const { default: helmet } = require('helmet')
 const cors = require('cors')
 const router = require('./router/index')
+const routerConsts = require('./consts/index')
+const middleware = require('./middleware/index')
 
 const app = express()
 const PORT = process.env.PORT || 5000
@@ -11,9 +13,18 @@ const PORT = process.env.PORT || 5000
 configs.serverConfig.initialServerConfig()
 
 app.use(express.json())
-app.use(helmet())
-app.use(cors())
-app.use(`${process.env.APP_PREFIX}test`,router.test)
+app.use(helmet()) //helmet, uygulamanin guvenligini saglamak icin kullanilir, http headerlarini duzenler ve guvenlik saglar
+app.use(cors()) //cors, farkli domainlerden gelen istekleri kabul etmek icin kullanilir yani domain derken farkli sunuculardan gelen istekleri kabul etmek icin kullanilir
+
+app.use(middleware.loggerMiddleware) //middleware, uygulamanin herhangi bir yerinde kullanilabilen bir fonksiyon
+app.use(middleware.authMiddleware)
+
+app.use(`${process.env.APP_PREFIX}${routerConsts.routerPrefix.COMMON}`,router.commonRouter)
+app.use(`${process.env.APP_PREFIX}${routerConsts.routerPrefix.COMPANY}`,router.companyRouter)
+app.use(`${process.env.APP_PREFIX}${routerConsts.routerPrefix.PERSON}`,router.personRouter)
+app.use(`${process.env.APP_PREFIX}${routerConsts.routerPrefix.TITLES}`,router.titlesRouter)
+app.use(`${process.env.APP_PREFIX}${routerConsts.routerPrefix.AUTH}`,router.authRouter)
+
 
 db.mongooseConnection.
 connectToMongoDB(process.env.MONGODB_HOST, process.env.MONGODB_PORT,

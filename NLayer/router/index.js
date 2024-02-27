@@ -1,5 +1,13 @@
-const testRouter = require('./testRouter').test
+const commonRouter = require('./common.router')
+const companyRouter = require('./company.router')
+const personRouter = require('./person.router')
+const titlesRouter = require('./titles.router')
+const authRouter = require('./titles.router')
 
 module.exports = {
-    test:testRouter
+    commonRouter,
+    companyRouter,
+    personRouter,
+    titlesRouter,
+    authRouter
 }
