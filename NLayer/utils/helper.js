@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken')
-
+const logger = require('./logger')
 const createToken = () => { 
     const token = jwt.sign({ 
         userId: '',
@@ -28,8 +28,20 @@ const verifyToken = (token) => {
     return md5(password)
 }
 
+const logToError=(err,req) => { 
+    logger.error(`IP Adresi : ${req.ip} 
+    | PATH : ${req.path} 
+    | BODY : ${JSON.stringify(req.body)} 
+    | PARAMS : ${JSON.stringify(req.params)} 
+    | QUERY : ${JSON.stringify(req.query)}
+    | ERROR TIME : ${new Date().toLocaleString()}
+    | URL : ${req.url} 
+    | ERROR MESSAGE : ${err.message}`)
+}
+
  module.exports = {
     createToken,
     verifyToken,
-    hashToPassword
+    hashToPassword,
+    logToError
 }

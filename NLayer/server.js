@@ -19,11 +19,11 @@ app.use(cors()) //cors, farkli domainlerden gelen istekleri kabul etmek icin kul
 app.use(middleware.loggerMiddleware) //middleware, uygulamanin herhangi bir yerinde kullanilabilen bir fonksiyon
 app.use(middleware.authMiddleware)
 
-app.use(`${process.env.APP_PREFIX}${routerConsts.routerPrefix.COMMON}`,router.commonRouter)
-app.use(`${process.env.APP_PREFIX}${routerConsts.routerPrefix.COMPANY}`,router.companyRouter)
-app.use(`${process.env.APP_PREFIX}${routerConsts.routerPrefix.PERSON}`,router.personRouter)
-app.use(`${process.env.APP_PREFIX}${routerConsts.routerPrefix.TITLES}`,router.titlesRouter)
-app.use(`${process.env.APP_PREFIX}${routerConsts.routerPrefix.AUTH}`,router.authRouter)
+app.use(`${process.env.APP_PREFIX}${routerConsts.routerPrefix.COMMON}`,router.commonRouter.common)
+app.use(`${process.env.APP_PREFIX}${routerConsts.routerPrefix.COMPANY}`,router.companyRouter.company)
+app.use(`${process.env.APP_PREFIX}${routerConsts.routerPrefix.PERSON}`,router.personRouter.person)
+app.use(`${process.env.APP_PREFIX}${routerConsts.routerPrefix.TITLES}`,router.titlesRouter.titles)
+app.use(`${process.env.APP_PREFIX}${routerConsts.routerPrefix.AUTH}`,router.authRouter.auth)
 
 
 db.mongooseConnection.

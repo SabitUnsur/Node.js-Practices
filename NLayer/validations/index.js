@@ -1,2 +1,2 @@
-const testValdiator = require('./testValidator')
-module.exports = { testValdiator }
+const commonValidator = require('./common.validator')
+module.exports = { commonValidator }

@@ -9,6 +9,6 @@ router.put('/update/:personId', controller.personController.updatePerson)
 router.delete('/delete/:personId', controller.personController.deletePersonById)
 
 
-module.exports={
-    auth:router
+module.exports = {
+    person: router
 }

@@ -1,5 +1,5 @@
-const authMiddleware = require('./authMiddleware')
-const loggerMiddleware = require('./loggerMiddleware')
+const authMiddleware = require('./auth.middleware')
+const loggerMiddleware = require('./logger.middleware')
 
 module.exports = {
     authMiddleware,
