@@ -6,11 +6,15 @@ const cors = require('cors')
 const router = require('./router/index')
 const routerConsts = require('./consts/index')
 const middleware = require('./middleware/index')
+const utils = require('./utils/index')
 
 const app = express()
 const PORT = process.env.PORT || 5000
 
 configs.serverConfig.initialServerConfig()
+utils.helpers.createUploadDir('./uploads')
+
+app.use('/uploads', express.static('uploads')) //uploads klasorunu public hale getirir, yani dısarıya acar
 
 app.use(express.json())
 app.use(helmet()) //helmet, uygulamanin guvenligini saglamak icin kullanilir, http headerlarini duzenler ve guvenlik saglar

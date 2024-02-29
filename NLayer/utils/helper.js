@@ -1,5 +1,9 @@
 const jwt = require('jsonwebtoken')
 const logger = require('./logger')
+const fs = require('fs')
+const dns = require('dns')
+const os = require('os')
+
 const createToken = () => { 
     const token = jwt.sign({ 
         userId: '',
@@ -28,6 +32,24 @@ const verifyToken = (token) => {
     return md5(password)
 }
 
+const createUploadDir = (str) => {
+    if (!fs.existsSync(str)){
+        fs.mkdirSync(str, { recursive: true })
+    }
+}
+
+const getHost = () => { 
+    return new Promise((resolve, reject) => { 
+        dns.lookup(os.hostname(), (err, ip) => { 
+            if(err) { 
+                reject(err)
+            }else { 
+                resolve(`http://${ip}:${process.env.PORT}`)
+            }
+        })
+    })
+}
+
 const logToError=(err,req) => { 
     logger.error(`IP Adresi : ${req.ip} 
     | PATH : ${req.path} 
@@ -43,5 +65,7 @@ const logToError=(err,req) => {
     createToken,
     verifyToken,
     hashToPassword,
-    logToError
+    logToError,
+    createUploadDir,
+    getHost
 }

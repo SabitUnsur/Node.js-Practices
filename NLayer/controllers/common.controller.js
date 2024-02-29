@@ -56,7 +56,6 @@ exports.getCityByCountryId = (req, res) => {
          ..._response,
          data: json,
          success: true,
-         error: false,
          timestamp: Date.now(),
          code: StatusCodes.OK
       })

@@ -1,6 +1,6 @@
 const baseResponse = { 
     code: '',
-    error: '',
+    error: false,
     timestamp: '',
     success: '',
     data: null,
