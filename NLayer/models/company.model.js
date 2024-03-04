@@ -8,7 +8,7 @@ const companySchema = new Schema({
     },
     logo: {
         type: Schema.Types.String,
-        required: true
+        required: false
     },
     year: {
         type: Schema.Types.Number,
