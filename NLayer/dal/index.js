@@ -1,4 +1,4 @@
-const companyDal = require('./companyDal')
+const companyDal = require('./company.dal')
 
 module.exports = {
    company: companyDal

@@ -30,4 +30,4 @@ const companySchema = new Schema({
 
 const Company = mongoose.model('Company', companySchema,'company')
 
-modukle.exports = Company
+module.exports = Company

@@ -33,3 +33,21 @@ exports.createCompany = async (req, res) => {
 exports.updateCompany = (req, res) => { }
 
 exports.deleteCompanyById = (req, res) => { }
+
+exports.uploadLogo = async (req, res) => {
+    const _response = { ...baseResponse } // clone the base response
+    try {
+        const json = await companyService.company.uploadLogo(req)
+        res.status(StatusCodes.OK).json(json)
+    } catch (error) {
+        utils.helpers.logToError(error,req)
+        res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
+            ..._response,
+            error: true,
+            success: false,
+            timestamp: Date.now(),
+            code: StatusCodes.INTERNAL_SERVER_ERROR,
+            message: error.message
+        })
+    }
+}
