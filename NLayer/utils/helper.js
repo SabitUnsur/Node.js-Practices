@@ -36,7 +36,7 @@ const createUploadDir = (str) => {
     if (!fs.existsSync(str)){
         fs.mkdirSync(str, { recursive: true })
     }
-}
+} // bu fonksiyonun amacı upload klasörünü oluşturmak
 
 const getHost = () => { 
     return new Promise((resolve, reject) => { 
@@ -50,7 +50,7 @@ const getHost = () => {
     })
 }
 
-const logToError=(err,req) => { 
+const logToError=(err,req,message) => { 
     logger.error(`IP Adresi : ${req.ip} 
     | PATH : ${req.path} 
     | BODY : ${JSON.stringify(req.body)} 
@@ -58,7 +58,8 @@ const logToError=(err,req) => {
     | QUERY : ${JSON.stringify(req.query)}
     | ERROR TIME : ${new Date().toLocaleString()}
     | URL : ${req.url} 
-    | ERROR MESSAGE : ${err.message}`)
+    | ERROR MESSAGE : ${err.message}
+    | CUSTOM INFO : ${message}`)
 }
 
  module.exports = {
