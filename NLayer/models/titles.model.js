@@ -18,4 +18,4 @@ const titleSchema = new Schema({
 
 const Title = mongoose.model('Title', titleSchema,'title')
 
-modukle.exports = Title
+module.exports = Title

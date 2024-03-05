@@ -317,3 +317,23 @@
   label: 'Uygulama V1',
   timestamp: '2024-03-04T09:49:42.784Z'
 }
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-04T09:58:20.491Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/company/uploadLogo \n' +
+    '    | BODY : {} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {"id":"65e596e35f2585d45af69e28"}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 04.03.2024 12:58:22\n' +
+    '    | URL : /api/v1/company/uploadLogo?id=65e596e35f2585d45af69e28',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-04T09:58:22.433Z'
+}

@@ -1,0 +1,565 @@
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T07:35:48.251Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/company/create \n' +
+    '    | BODY : {"name":"Expoo","description":"test","year":"sdffdsfsdf"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 10:35:52\n' +
+    '    | URL : /api/v1/company/create',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T07:35:52.058Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T07:40:33.101Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/company/create \n' +
+    '    | BODY : {"name":"Expoo","description":"test","year":"sdffdsfsdf"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 10:40:35\n' +
+    '    | URL : /api/v1/company/create',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T07:40:35.214Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T07:42:33.227Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/company/create \n' +
+    '    | BODY : {"name":"Expo1o","description":"test","year":"sdffdsfsdf"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 10:42:36\n' +
+    '    | URL : /api/v1/company/create',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T07:42:36.721Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T07:44:28.867Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/company/create \n' +
+    '    | BODY : {"name":"Expo1o","description":"test","year":"sdffdsfsdf"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 10:44:30\n' +
+    '    | URL : /api/v1/company/create',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T07:44:30.158Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T07:50:26.805Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/uploadLogo/65e596e35f2585d45af69e28 \n' +
+    '    | BODY : {} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 10:50:29\n' +
+    '    | URL : /api/v1/uploadLogo/65e596e35f2585d45af69e28',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T07:50:29.683Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/uploadLogo/ \n' +
+    '    | BODY : {} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {"id":"65e596e35f2585d45af69e28"}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 10:50:52\n' +
+    '    | URL : /api/v1/uploadLogo/?id=65e596e35f2585d45af69e28',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T07:50:52.331Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/uploadLogo/ \n' +
+    '    | BODY : {} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {"id":"65e596e35f2585d45af69e28"}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 10:50:56\n' +
+    '    | URL : /api/v1/uploadLogo/?id=65e596e35f2585d45af69e28',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T07:50:56.755Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/uploadLogo \n' +
+    '    | BODY : {} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {"id":"65e596e35f2585d45af69e28"}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 10:51:39\n' +
+    '    | URL : /api/v1/uploadLogo?id=65e596e35f2585d45af69e28',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T07:51:39.513Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/company/uploadLogo \n' +
+    '    | BODY : {} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {"id":"65e596e35f2585d45af69e28"}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 10:51:52\n' +
+    '    | URL : /api/v1/company/uploadLogo?id=65e596e35f2585d45af69e28',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T07:51:52.343Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:02:31.881Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/company/all \n' +
+    '    | BODY : {"name":"Expo1o","description":"test","year":"sdffdsfsdf"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 11:02:53\n' +
+    '    | URL : /api/v1/company/all',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:02:53.536Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:06:32.450Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/company/all \n' +
+    '    | BODY : {"name":"Expo1o","description":"test","year":"sdffdsfsdf"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 11:06:33\n' +
+    '    | URL : /api/v1/company/all',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:06:33.826Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:13:30.922Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/company/delete \n' +
+    '    | BODY : {"name":"Expo1o","description":"test","year":"sdffdsfsdf"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {":companyId":"65e596e35f2585d45af69e28"}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 11:14:00\n' +
+    '    | URL : /api/v1/company/delete?:companyId=65e596e35f2585d45af69e28',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:14:00.304Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/company/delete \n' +
+    '    | BODY : {"name":"Expo1o","description":"test","year":"sdffdsfsdf"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {"companyId":"65e596e35f2585d45af69e28"}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 11:15:09\n' +
+    '    | URL : /api/v1/company/delete?companyId=65e596e35f2585d45af69e28',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:15:09.064Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:17:13.434Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/company/delete \n' +
+    '    | BODY : {"name":"Expo1o","description":"test","year":"sdffdsfsdf"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {"companyId":"65e596e35f2585d45af69e28"}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 11:17:18\n' +
+    '    | URL : /api/v1/company/delete?companyId=65e596e35f2585d45af69e28',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:17:18.966Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /delete \n' +
+    '    | BODY : {"name":"Expo1o","description":"test","year":"sdffdsfsdf"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {"companyId":"65e596e35f2585d45af69e28"}\n' +
+    '    | ERROR TIME : 05.03.2024 11:17:18\n' +
+    '    | URL : /delete?companyId=65e596e35f2585d45af69e28 \n' +
+    '    | ERROR MESSAGE : CastError: Cast to ObjectId failed for value "{ _id: undefined }" (type Object) at path "_id" for model "Company"\n' +
+    '    | CUSTOM INFO : undefined',
+  level: 'error',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:17:18.971Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/company/delete \n' +
+    '    | BODY : {"name":"Expo1o","description":"test","year":"sdffdsfsdf"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {"id":"65e596e35f2585d45af69e28"}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 11:17:44\n' +
+    '    | URL : /api/v1/company/delete?id=65e596e35f2585d45af69e28',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:17:44.203Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:23:27.224Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/company/create \n' +
+    '    | BODY : {"name":"Expozy London","description":"test","year":"2004"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 11:23:28\n' +
+    '    | URL : /api/v1/company/create',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:23:28.825Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/company/create \n' +
+    '    | BODY : {"name":"Expozy Istanbul","description":"Istanbul","year":"2021"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 11:23:40\n' +
+    '    | URL : /api/v1/company/create',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:23:40.453Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:23:54.390Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/company/getById \n' +
+    '    | BODY : {"name":"Expozy Istanbul","description":"Istanbul","year":"2021"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {"companyId":"65e6d68004a184b3c78f01d1"}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 11:24:17\n' +
+    '    | URL : /api/v1/company/getById?companyId=65e6d68004a184b3c78f01d1',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:24:17.131Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:24:31.028Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/company/getById \n' +
+    '    | BODY : {"name":"Expozy Istanbul","description":"Istanbul","year":"2021"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {"companyId":"65e6d68004a184b3c78f01d1"}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 11:24:32\n' +
+    '    | URL : /api/v1/company/getById?companyId=65e6d68004a184b3c78f01d1',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:24:32.865Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:26:06.440Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/company/getById \n' +
+    '    | BODY : {"name":"Expozy Istanbul","description":"Istanbul","year":"2021"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {"companyId":"65e6d68004a184b3c78f01d1"}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 11:26:08\n' +
+    '    | URL : /api/v1/company/getById?companyId=65e6d68004a184b3c78f01d1',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:26:08.466Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:27:01.481Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/company/getById \n' +
+    '    | BODY : {"name":"Expozy Istanbul","description":"Istanbul","year":"2021"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {"id":"65e6d68004a184b3c78f01d1"}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 11:27:04\n' +
+    '    | URL : /api/v1/company/getById?id=65e6d68004a184b3c78f01d1',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:27:04.546Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:29:40.116Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/company/getById \n' +
+    '    | BODY : {"name":"Expozy Istanbul","description":"Istanbul","year":"2021"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {"companyId":"65e6d68004a184b3c78f01d1"}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 11:29:53\n' +
+    '    | URL : /api/v1/company/getById?companyId=65e6d68004a184b3c78f01d1',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:29:53.118Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/company/getById \n' +
+    '    | BODY : {"name":"Expozy Istanbul","description":"Istanbul","year":"2021"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {"id":"65e6d68004a184b3c78f01d1"}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 11:30:08\n' +
+    '    | URL : /api/v1/company/getById?id=65e6d68004a184b3c78f01d1',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:30:08.432Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/company/getById/65e6d68004a184b3c78f01d1 \n' +
+    '    | BODY : {"name":"Expozy Istanbul","description":"Istanbul","year":"2021"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 11:30:42\n' +
+    '    | URL : /api/v1/company/getById/65e6d68004a184b3c78f01d1',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:30:42.651Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:31:30.626Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/company/getById/65e6d68004a184b3c78f01d1 \n' +
+    '    | BODY : {"name":"Expozy Istanbul","description":"Istanbul","year":"2021"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 11:31:32\n' +
+    '    | URL : /api/v1/company/getById/65e6d68004a184b3c78f01d1',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:31:32.280Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:34:02.477Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/company/getById/65e6d68004a184b3c78f01d1 \n' +
+    '    | BODY : {"name":"Expozy Istanbul","description":"Istanbul","year":"2021"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 11:34:05\n' +
+    '    | URL : /api/v1/company/getById/65e6d68004a184b3c78f01d1',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:34:05.156Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/company/getById/65e6d68004a184b3c78f01d1 \n' +
+    '    | BODY : {"name":"Expozy Istanbul","description":"Istanbul","year":"2021"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 11:34:20\n' +
+    '    | URL : /api/v1/company/getById/65e6d68004a184b3c78f01d1',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:34:20.234Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:34:41.165Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/company/getById/65e6d68004a184b3c78f01d1 \n' +
+    '    | BODY : {"name":"Expozy Istanbul","description":"Istanbul","year":"2021"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 11:34:42\n' +
+    '    | URL : /api/v1/company/getById/65e6d68004a184b3c78f01d1',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:34:42.464Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:40:20.464Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/company/update/65e6d68004a184b3c78f01d1 \n' +
+    '    | BODY : {"name":"Expozy Ankara","description":"Ankara","year":"2024"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 11:40:40\n' +
+    '    | URL : /api/v1/company/update/65e6d68004a184b3c78f01d1',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:40:40.071Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:42:44.898Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/company/update/65e6d68004a184b3c78f01d1 \n' +
+    '    | BODY : {"name":"Expozy Kayseri","description":"Kayseri","year":"2023"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 11:42:57\n' +
+    '    | URL : /api/v1/company/update/65e6d68004a184b3c78f01d1',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T08:42:57.807Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T09:47:49.484Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/titles/create \n' +
+    '    | BODY : {"name":"Senior Developer"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 12:48:52\n' +
+    '    | URL : /api/v1/titles/create',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T09:48:52.192Z'
+}
