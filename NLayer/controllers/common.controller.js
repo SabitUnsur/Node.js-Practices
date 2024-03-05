@@ -22,7 +22,7 @@ exports.getAllCountry = (req, res) => {
       baseResponse.timestamp = Date.now()
       baseResponse.code = StatusCodes.INTERNAL_SERVER_ERROR
       baseResponse.message = error.message
-      utils.helpers.logToError(error)
+      utils.helpers.logToError(error,req)
       res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
          ..._response,
          error: true,
@@ -38,22 +38,16 @@ exports.getAllCountry = (req, res) => {
 exports.getCityByCountryId = (req, res) => {
    try {
       const { countryId } = req.params
-      const _response = { ...baseResponse }
-      const validationErrors = validationResult(req)
-      if (validationErrors.isEmpty() === false) {
-         res.status(StatusCodes.BAD_REQUEST).json({
-            ..._response,
-            success: false,
-            error: true,
-            timestamp: Date.now(),
-            code: StatusCodes.BAD_REQUEST,
-            message: "Invalid value",
-            validationErrors: validationErrors.array(),
-         })
-      }
+      const isInvalid = utils.helpers.handleValidation(req)
+        if (isInvalid) {
+         return res.status(StatusCodes.BAD_REQUEST).json({
+                ...baseResponse,
+                ...isInvalid
+            })
+        }
       const json = commonService.getCityByCountryId(countryId)
       res.json({
-         ..._response,
+         ...baseResponse,
          data: json,
          success: true,
          timestamp: Date.now(),
@@ -62,7 +56,7 @@ exports.getCityByCountryId = (req, res) => {
    } catch (error) {
       utils.helpers.logToError(error)
       res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
-         ..._response,
+         ...baseResponse,
          error: true,
          success: false,
          error: false,

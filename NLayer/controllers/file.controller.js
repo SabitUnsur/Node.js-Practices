@@ -11,7 +11,7 @@ exports.uploadFile = async (req, res) => {
     try {
         upload(req,res, async (err)=>{ 
             if(err instanceof multer.MulterError){
-                utils.helpers.logToError(err,req, req.file ? req.file.filename : '')    
+                utils.helpers.Error(err,req, req.file ? req.file.filename : '')    
                  res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
                     ..._response,
                     error: true,
