@@ -22,7 +22,29 @@ exports.getAllTitles= async (req,res) => {
     }
 }
 
-exports.getTitleById= (req,res) => { }
+exports.getTitleById= async(req,res) => {   
+        try {
+            const isInvalid = utils.helpers.handleValidation(req)
+            if (isInvalid) {
+                return res.status(StatusCodes.BAD_REQUEST).json({
+                    ...baseResponse,
+                    ...isInvalid
+                })
+            }
+            const json = await titleService.title.getTitleById(req)
+            res.status(StatusCodes.OK).json({ ...baseResponse, data: json, success: true, timestamp: Date.now(), code: StatusCodes.OK, message: 'success' })
+        } catch (error) {
+            utils.helpers.logToError(error, req)
+            res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
+                ...baseResponse,
+                error: true,
+                success: false,
+                timestamp: Date.now(),
+                code: StatusCodes.INTERNAL_SERVER_ERROR,
+                message: error.message
+            })
+        }
+}
 
 exports.createTitle= async (req,res) => { 
         try {
@@ -51,6 +73,52 @@ exports.createTitle= async (req,res) => {
     
 }
 
-exports.updateTitle= (req,res) => { }
+exports.updateTitle= async (req,res) => {
+    try {
+        const isInvalid = utils.helpers.handleValidation(req)
+        if (isInvalid) {
+            return res.status(StatusCodes.BAD_REQUEST).json({
+                ...baseResponse,
+                ...isInvalid
+            })
+        }
+        const json = await titleService.title.updateTitle(req)
+        res.status(StatusCodes.CREATED).json({ ...baseResponse, data: json, success: true, timestamp: Date.now(), code: StatusCodes.CREATED, message: 'Title updated successfully' })
+    } catch (error) {
+        utils.helpers.logToError(error, req)
+        res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
+            ...baseResponse,
+            error: true,
+            success: false,
+            timestamp: Date.now(),
+            code: StatusCodes.INTERNAL_SERVER_ERROR,
+            message: error.message
+        })
+    }
+ }
 
-exports.deleteTitleById= (req,res) => { }
+exports.deleteTitleById= async (req,res) => { 
+    try {
+        const isInvalid = utils.helpers.handleValidation(req)
+        if (isInvalid) {
+            return res.status(StatusCodes.BAD_REQUEST).json({
+                ...baseResponse,
+                ...isInvalid
+            })
+        }
+        const json = await titleService.title.deleteTitleById(req)
+        res.status(StatusCodes.OK).json({ ...baseResponse, data: json, success: true, timestamp: Date.now(), code: StatusCodes.OK, message: 'Company deleted successfully' })
+
+
+    } catch (error) {
+        utils.helpers.logToError(error, req)
+        res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
+            ...baseResponse,
+            error: true,
+            success: false,
+            timestamp: Date.now(),
+            code: StatusCodes.INTERNAL_SERVER_ERROR,
+            message: error.message
+        })
+    }
+}

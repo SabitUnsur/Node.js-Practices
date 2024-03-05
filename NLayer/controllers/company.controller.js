@@ -39,7 +39,6 @@ exports.getCompanyById = async (req, res) => {
             ...baseResponse,
             error: true,
             success: false,
-            data: json,
             timestamp: Date.now(),
             code: StatusCodes.INTERNAL_SERVER_ERROR,
             message: error.message
