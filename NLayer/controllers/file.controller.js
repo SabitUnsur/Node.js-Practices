@@ -6,7 +6,7 @@ const multer = require('multer')
 
 
 
-exports.uploadFile = async (req, res) => {
+exports.uploadImage = async (req, res) => {
     const _response = { ...baseResponse } // clone the base response
     try {
         upload(req,res, async (err)=>{ 
