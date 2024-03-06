@@ -37,3 +37,26 @@ exports.updatePerson= (req,res) => { }
 
 exports.deletePersonById= (req,res) => { }
 
+exports.uploadAvatar = async (req, res) => {
+    try {
+        const isInvalid = utils.helpers.handleValidation(req)
+        if (isInvalid) {
+            return res.status(StatusCodes.BAD_REQUEST).json({
+                ...baseResponse,
+                ...isInvalid
+            })
+        }
+        const json = await personService.person.uploadAvatar(req)
+        res.status(StatusCodes.OK).json(json)
+    } catch (error) {
+        utils.helpers.logToError(error, req)
+        res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
+            ...baseResponse,
+            error: true,
+            success: false,
+            timestamp: Date.now(),
+            code: StatusCodes.INTERNAL_SERVER_ERROR,
+            message: error.message
+        })
+    }
+}
