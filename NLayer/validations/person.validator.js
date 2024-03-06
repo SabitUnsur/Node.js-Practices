@@ -1,5 +1,7 @@
-const { body} = require('express-validator')
+const { body,query} = require('express-validator')
 const personService = require('../services/index')
+const utils = require('../utils/index')
+
 
 const PersonValidator = {
     validateCreatePerson() {
@@ -10,9 +12,13 @@ const PersonValidator = {
             body('birthDate').not().equals(0),
             body('gender').not().isEmpty(),
             body('salary').isNumeric(),
-            body('tcNumber').isNumeric(),
-            body('tcNumber').not().equals(0),
-            body('tcNumber').isLength({ min: 11, max: 11 }),
+            body('tcNumber').isNumeric().not().equals(0).isLength({ min: 11, max: 11 }).custom(async (value,{req})=>{
+                const result = await utils.helpers.tcNumberValidator(value)
+                if (!result) {
+                    throw new Error('Invalid TC number')
+                }
+                return true
+            }),
             body('email').not().isEmpty().isEmail().custom(async(value,{req})=>{
                 const result = await personService.person.findByEmail(value)
                 if (result) {
@@ -27,6 +33,9 @@ const PersonValidator = {
             body('company').isMongoId(),
             body('title').isMongoId()
         ]
+    },
+    validateUploadAvatar() { 
+        return [query('id').isMongoId()]
     }
 }
 
