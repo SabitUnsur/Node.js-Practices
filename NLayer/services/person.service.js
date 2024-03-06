@@ -8,7 +8,7 @@ const personTitleDto = require('../dto/person.title.dto')
 
 exports.createPerson = async (req) => {
     try {
-        const  {
+        const {
             name,
             surname,
             birthDate,
@@ -35,17 +35,17 @@ exports.createPerson = async (req) => {
             city,
             company,
             title,
-            avatar:"",
-            cvFile:""
+            avatar: "",
+            cvFile: ""
         })
         const json = await personDal.person.create(person)
-        return  {
+        return {
             ...personDto,
             name: json.name,
             surname: json.surname,
             birthDate: new Date(json.birthDate),
-            gender:json.gender,
-            salary:  new Intl.NumberFormat('tr-TR', { style: 'currency', currency: 'YTL' }).format(json.salary),
+            gender: json.gender,
+            salary: new Intl.NumberFormat('tr-TR', { style: 'currency', currency: 'YTL' }).format(json.salary),
             tcNumber: json.tcNumber,
             email: json.email,
             country: json.country,
@@ -63,9 +63,9 @@ exports.createPerson = async (req) => {
     }
 }
 
-exports.findByEmail = async (email) => { 
+exports.findByEmail = async (email) => {
     try {
-        const person = await personDal.person.findOne({email})
+        const person = await personDal.person.findOne({ email })
         return person
     } catch (error) {
         throw new Error(error)
@@ -77,13 +77,13 @@ exports.uploadAvatar = async (req) => {
         const { id } = req.query
         const str = await fileService.uploadImage(req)
         const json = await personDal.person.updateById(id, { avatar: str })
-        return  {
+        return {
             ...personDto,
             name: json.name,
             surname: json.surname,
             birthDate: new Date(json.birthDate),
-            gender:json.gender,
-            salary:  new Intl.NumberFormat('tr-TR', { style: 'currency', currency: 'YTL' }).format(json.salary),
+            gender: json.gender,
+            salary: new Intl.NumberFormat('tr-TR', { style: 'currency', currency: 'YTL' }).format(json.salary),
             tcNumber: json.tcNumber,
             email: json.email,
             country: json.country,
@@ -107,13 +107,13 @@ exports.uploadCv = async (req) => {
         const { id } = req.query
         const str = await fileService.uploadCv(req)
         const json = await personDal.person.updateById(id, { cvFile: str })
-        return  {
+        return {
             ...personDto,
             name: json.name,
             surname: json.surname,
             birthDate: new Date(json.birthDate),
-            gender:json.gender,
-            salary:  new Intl.NumberFormat('tr-TR', { style: 'currency', currency: 'YTL' }).format(json.salary),
+            gender: json.gender,
+            salary: new Intl.NumberFormat('tr-TR', { style: 'currency', currency: 'YTL' }).format(json.salary),
             tcNumber: json.tcNumber,
             email: json.email,
             country: json.country,
@@ -131,33 +131,33 @@ exports.uploadCv = async (req) => {
     }
 }
 
-exports.getCompanyByPersonId = async (req) => { 
+exports.getCompanyByPersonId = async (req) => {
     try {
         const { id } = req.params
         const json = await personDal.person.getCompanyByPersonId({ _id: id }, {
             path: 'company',
             select: 'company _id year name'
         })
-        return {...personCompanyDto, name: json.company.name, year: json.company.year, id: json.company._id }
+        return { ...personCompanyDto, name: json.company.name, year: json.company.year, id: json.company._id }
     } catch (error) {
         throw new Error(error)
     }
 }
 
-exports.getTitleByPersonId= async (req) => { 
+exports.getTitleByPersonId = async (req) => {
     try {
         const { id } = req.params
         const json = await personDal.person.getTitleByPersonId({ _id: id }, {
             path: 'title',
             select: '_id name'
         })
-        return {...personTitleDto, name: json.title.name, id: json.title._id}
+        return { ...personTitleDto, name: json.title.name, id: json.title._id }
     } catch (error) {
         throw new Error(error)
     }
 }
 
-exports.getPersonById = async (req) => { 
+exports.getPersonById = async (req) => {
     try {
         const { id } = req.params
         const json = await personDal.person.getPersonById(id)
@@ -168,8 +168,8 @@ exports.getPersonById = async (req) => {
             name: json.name,
             surname: json.surname,
             birthDate: new Date(json.birthDate),
-            gender:json.gender,
-            salary:  new Intl.NumberFormat('tr-TR', { style: 'currency', currency: 'YTL' }).format(json.salary),
+            gender: json.gender,
+            salary: new Intl.NumberFormat('tr-TR', { style: 'currency', currency: 'YTL' }).format(json.salary),
             tcNumber: json.tcNumber,
             email: json.email,
             country: json.country,
@@ -180,6 +180,24 @@ exports.getPersonById = async (req) => {
             createdAt: json.createdAt,
             updatedAt: json.updatedAt
         }
+    } catch (error) {
+        throw new Error(error)
+    }
+}
+
+exports.getAllList = async() => {
+    try {
+        const json = await personDal.person.listAll({}, [{
+                path: 'company',
+                select: 'company _id year name',
+                //match: { year: { $gte: 2010 } } // filter by year greater than or equal to 2010 
+            },
+            {
+                path: 'title',
+                select: '_id name'
+            }
+        ])
+        return json
     } catch (error) {
         throw new Error(error)
     }
