@@ -1,4 +1,4 @@
-const { body,query} = require('express-validator')
+const { body,query, param} = require('express-validator')
 const personService = require('../services/index')
 const utils = require('../utils/index')
 
@@ -36,6 +36,18 @@ const PersonValidator = {
     },
     validateUploadAvatar() { 
         return [query('id').isMongoId()]
+    },
+    validateUploadCv() { 
+        return [query('id').isMongoId()]
+    },
+    validateGetCompanyByPersonId() { 
+        return [param('id').isMongoId()]
+    },
+    validateGetTitleByPersonId() { 
+        return [param('id').isMongoId()]
+    },
+    validateGetPersonById(){
+        return [param('id').isMongoId()]
     }
 }
 
