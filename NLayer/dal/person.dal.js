@@ -8,8 +8,8 @@ const PersonDataAccess = {
     async updateById(id,body) {
         return await Person.findByIdAndUpdate({ _id: id }, body)
     },
-    async listAll() {
-       // return await Person.find().select('_id name createdAt updatedAt')
+    async listAll(where = {}, populate) {
+        return await Person.find(where).select('_id name surname birthDate gender salary tcNumber email avatar cvFile country city title company').populate(populate)
     },
     async deleteById(id) {
         return await Person.findByIdAndDelete({ _id: id })
