@@ -15,14 +15,17 @@ const PersonDataAccess = {
         return await Person.findByIdAndDelete({ _id: id })
     },
     async getPersonById(id) { 
-        return await Person.findById({_id: id}).select('_id name createdAt updatedAt')
+        return await Person.findById({_id: id})
     },
     async findOne(where){
         return await Person.findOne(where)
     },
     async getCompanyByPersonId(where, populate) { 
         return await Person.findOne(where).populate(populate)
-    }
+    },
+    async getTitleByPersonId(where, populate) { 
+        return await Person.findOne(where).populate(populate)
+    },
 } 
 
 module.exports = PersonDataAccess
