@@ -1,0 +1,407 @@
+{
+    "extension": "linecount",
+    "version": "0.1.7",
+    "workspace": "c:\\Users\\sabit\\OneDrive\\Masaüstü\\Node.js\\NLayer",
+    "linecount": [
+        {
+            "version": "0.1.7",
+            "counttime": "2024-03-06 13:00:42",
+            "filesum": 65,
+            "codesum": 28132,
+            "commentsum": 25,
+            "blanksum": 173,
+            "filelist": [
+                {
+                    "blank": 1,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": ".env"
+                },
+                {
+                    "blank": 1,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "configs\\index.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 22,
+                    "comment": 0,
+                    "filename": "configs\\loggerConfig.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "configs\\serverConfig.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "consts\\auth.const.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "consts\\general.const.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "consts\\index.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "consts\\router.prefix.const.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "controllers\\auth.controller.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 66,
+                    "comment": 2,
+                    "filename": "controllers\\common.controller.js"
+                },
+                {
+                    "blank": 16,
+                    "code": 160,
+                    "comment": 4,
+                    "filename": "controllers\\company.controller.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 45,
+                    "comment": 1,
+                    "filename": "controllers\\file.controller.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "controllers\\index.js"
+                },
+                {
+                    "blank": 15,
+                    "code": 160,
+                    "comment": 0,
+                    "filename": "controllers\\person.controller.js"
+                },
+                {
+                    "blank": 12,
+                    "code": 112,
+                    "comment": 0,
+                    "filename": "controllers\\titles.controller.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 19,
+                    "comment": 0,
+                    "filename": "dal\\company.dal.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "dal\\index.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 28,
+                    "comment": 0,
+                    "filename": "dal\\person.dal.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 19,
+                    "comment": 0,
+                    "filename": "dal\\title.dal.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "db\\index.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 17,
+                    "comment": 1,
+                    "filename": "db\\mongooseConnection.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "dto\\baseresponse.dto.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "dto\\company.dto.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "dto\\person.company.dto.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 19,
+                    "comment": 0,
+                    "filename": "dto\\person.dto.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "dto\\person.title.dto.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "dto\\title.dto.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 20541,
+                    "comment": 0,
+                    "filename": "jsons\\cities.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 1480,
+                    "comment": 0,
+                    "filename": "jsons\\countries.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 42,
+                    "comment": 0,
+                    "filename": "logs\\2024-02-26.log"
+                },
+                {
+                    "blank": 0,
+                    "code": 265,
+                    "comment": 0,
+                    "filename": "logs\\2024-02-28.log"
+                },
+                {
+                    "blank": 0,
+                    "code": 339,
+                    "comment": 0,
+                    "filename": "logs\\2024-03-04.log"
+                },
+                {
+                    "blank": 0,
+                    "code": 900,
+                    "comment": 0,
+                    "filename": "logs\\2024-03-05.log"
+                },
+                {
+                    "blank": 0,
+                    "code": 886,
+                    "comment": 0,
+                    "filename": "logs\\2024-03-06.log"
+                },
+                {
+                    "blank": 1,
+                    "code": 25,
+                    "comment": 0,
+                    "filename": "middleware\\auth.middleware.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "middleware\\index.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "middleware\\logger.middleware.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "middleware\\singlecvupload.middleware.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "middleware\\singleimageupload.middleware.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 30,
+                    "comment": 0,
+                    "filename": "models\\company.model.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 70,
+                    "comment": 0,
+                    "filename": "models\\persons.model.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 18,
+                    "comment": 0,
+                    "filename": "models\\titles.model.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 1863,
+                    "comment": 0,
+                    "filename": "package-lock.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "package.json"
+                },
+                {
+                    "blank": 2,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "router\\auth.router.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "router\\common.router.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "router\\company.router.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "router\\index.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 16,
+                    "comment": 0,
+                    "filename": "router\\person.router.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "router\\titles.router.js"
+                },
+                {
+                    "blank": 8,
+                    "code": 32,
+                    "comment": 4,
+                    "filename": "server.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 17,
+                    "comment": 1,
+                    "filename": "services\\common.service.js"
+                },
+                {
+                    "blank": 10,
+                    "code": 147,
+                    "comment": 4,
+                    "filename": "services\\company.service.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 38,
+                    "comment": 0,
+                    "filename": "services\\file.service.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "services\\index.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 194,
+                    "comment": 4,
+                    "filename": "services\\person.service.js"
+                },
+                {
+                    "blank": 11,
+                    "code": 70,
+                    "comment": 2,
+                    "filename": "services\\title.service.js"
+                },
+                {
+                    "blank": 15,
+                    "code": 121,
+                    "comment": 2,
+                    "filename": "utils\\helper.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "utils\\index.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "utils\\logger.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "validations\\common.validator.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 23,
+                    "comment": 0,
+                    "filename": "validations\\company.validator.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "validations\\index.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 51,
+                    "comment": 0,
+                    "filename": "validations\\person.validator.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 16,
+                    "comment": 0,
+                    "filename": "validations\\title.validator.js"
+                }
+            ]
+        }
+    ]
+}
