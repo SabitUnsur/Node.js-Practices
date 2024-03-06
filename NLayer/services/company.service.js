@@ -33,7 +33,7 @@ exports.createCompany = async (req) => {
 exports.uploadLogo = async (req) => {
     try {
         const { id } = req.query
-        const str = await fileService.uploadFile(req)
+        const str = await fileService.uploadImage(req)
         const json = await companyDal.company.updateById(id, { logo: str })
         return {
             ...companyDto,
@@ -53,7 +53,7 @@ exports.uploadLogo = async (req) => {
 exports.updateLogo = async (req) => {
     try {
         const { id } = req.query
-        const str = await fileService.uploadFile(req)
+        const str = await fileService.uploadImage(req)
         const findedCompany = await companyDal.company.getCompanyById(id)
         const isLogoDeleted = utils.helpers.deleteFromDisk(findedCompany.logo ? findedCompany.logo.split('uploads/')[1] : '')
         if(isLogoDeleted){ 
