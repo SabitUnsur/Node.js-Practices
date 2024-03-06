@@ -1,5 +1,6 @@
 const Person = require('../models/persons.model')
 
+
 const PersonDataAccess = { 
     async create(personModel) {
         return await personModel.save()
@@ -18,6 +19,9 @@ const PersonDataAccess = {
     },
     async findOne(where){
         return await Person.findOne(where)
+    },
+    async getCompanyByPersonId(where, populate) { 
+        return await Person.findOne(where).populate(populate)
     }
 } 
 
