@@ -92,6 +92,37 @@ const deleteFromDisk = (fileName) =>{
     return true
 }
 
+const validateTcNumber = (value) =>{
+    value = String(value)
+    if (!(/^[1-9]\d{10}$/).test(value)) return false
+    const digits = value.split('')
+
+    const d10 = Number(digits[9])
+    const d11 = Number(digits[10])
+
+    let sumOf10 = 0
+    let evens = 0
+    let odds = 0
+    
+    digits.forEach((d, index) => {
+        d = Number(d)
+        if (index < 10) sumOf10 += d
+        if (index < 9) {
+            if ((index + 1) % 2 === 0) {
+                evens += d
+            } else {
+                odds += d
+            }
+        }
+    })
+ 
+    if (sumOf10 % 10 !== d11) return false;
+    if (((odds * 7) + (evens * 9)) % 10 !== d10) return false;
+    if ((odds * 8) % 10 !== d11) return false;
+    
+    return true;
+}
+
 module.exports = {
     createToken,
     verifyToken,
@@ -100,5 +131,6 @@ module.exports = {
     createUploadDir,
     getHost,
     handleValidation,
-    deleteFromDisk
+    deleteFromDisk,
+    validateTcNumber
 }
