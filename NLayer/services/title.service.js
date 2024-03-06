@@ -72,7 +72,6 @@ exports.updateTitle = async (req) => {
 exports.deleteTitleById = async (req) => { 
     try {
         const { id } = req.query
-        console.log(id)
         const json = await titleDal.title.deleteById(id)
         return {...titleDto,name : json.name, id: json.id, createdAt: json.createdAt, updatedAt: json.updatedAt}
     }catch (error) {
