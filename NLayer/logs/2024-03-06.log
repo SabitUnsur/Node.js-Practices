@@ -1,0 +1,886 @@
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T07:13:43.880Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/create \n' +
+    '    | BODY : {"name":"Sabit","surname":"Ünsür","birthDate":1038384000000,"gender":"E","salary":65000,"tcNumber":"16039506246","email":"sabit@expo.com","password":"12345678","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 10:21:29\n' +
+    '    | URL : /api/v1/person/create',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T07:21:29.703Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/create \n' +
+    '    | BODY : {"name":"Sabit","surname":"Ünsür","birthDate":1038384000000,"gender":"E","salary":65000,"tcNumber":"16039506246","email":"sabit@expo.com","password":"12345678","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 10:21:32\n' +
+    '    | URL : /api/v1/person/create',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T07:21:32.455Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T07:21:48.062Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/create \n' +
+    '    | BODY : {"name":"Sabit","surname":"Ünsür","birthDate":1038384000000,"gender":"E","salary":65000,"tcNumber":"16039506246","email":"sabit@expo.com","password":"12345678","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 10:21:51\n' +
+    '    | URL : /api/v1/person/create',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T07:21:51.135Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T07:21:56.649Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/create \n' +
+    '    | BODY : {"name":"Sabit","surname":"Ünsür","birthDate":1038384000000,"gender":"E","salary":65000,"tcNumber":"16039506246","email":"sabit@expo.com","password":"12345678","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 10:21:58\n' +
+    '    | URL : /api/v1/person/create',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T07:21:58.345Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /create \n' +
+    '    | BODY : {"name":"Sabit","surname":"Ünsür","birthDate":1038384000000,"gender":"E","salary":65000,"tcNumber":"16039506246","email":"sabit@expo.com","password":"12345678","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | ERROR TIME : 06.03.2024 10:21:58\n' +
+    '    | URL : /create \n' +
+    '    | ERROR MESSAGE : ValidationError: avatar: Path `avatar` is required., cvFile: Path `cvFile` is required.\n' +
+    '    | CUSTOM INFO : undefined',
+  level: 'error',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T07:21:58.352Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T07:22:22.540Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/create \n' +
+    '    | BODY : {"name":"Sabit","surname":"Ünsür","birthDate":1038384000000,"gender":"E","salary":65000,"tcNumber":"16039506246","email":"sabit@expo.com","password":"12345678","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 10:22:23\n' +
+    '    | URL : /api/v1/person/create',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T07:22:23.849Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T07:27:18.127Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/create \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 10:27:48\n' +
+    '    | URL : /api/v1/person/create',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T07:27:48.741Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T07:33:59.710Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/create \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"sss","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 10:34:07\n' +
+    '    | URL : /api/v1/person/create',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T07:34:08.006Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T07:35:15.479Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/create \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"aaaa","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 10:35:20\n' +
+    '    | URL : /api/v1/person/create',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T07:35:20.276Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T07:40:16.231Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/create \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"aaaa","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 10:40:20\n' +
+    '    | URL : /api/v1/person/create',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T07:40:20.869Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T07:40:39.224Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/create \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"aadaa","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 10:40:42\n' +
+    '    | URL : /api/v1/person/create',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T07:40:42.059Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T07:46:47.366Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/create \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 10:46:59\n' +
+    '    | URL : /api/v1/person/create',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T07:46:59.328Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /create \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | ERROR TIME : 06.03.2024 10:46:59\n' +
+    '    | URL : /create \n' +
+    '    | ERROR MESSAGE : MongoServerError: E11000 duplicate key error collection: myapi.person index: email_1 dup key: { email: "egemen@expo.com" }\n' +
+    '    | CUSTOM INFO : undefined',
+  level: 'error',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T07:46:59.355Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T07:48:01.366Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/create \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 10:48:04\n' +
+    '    | URL : /api/v1/person/create',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T07:48:04.270Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T08:06:05.431Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/uploadAvatar \n' +
+    '    | BODY : {} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {"id":"65e819af8bc6924546e604ec"}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 11:07:48\n' +
+    '    | URL : /api/v1/person/uploadAvatar?id=65e819af8bc6924546e604ec',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T08:07:48.296Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T08:46:33.563Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/uploadCv \n' +
+    '    | BODY : {} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {"id":"65e819af8bc6924546e604ec"}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 11:46:55\n' +
+    '    | URL : /api/v1/person/uploadCv?id=65e819af8bc6924546e604ec',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T08:46:55.901Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T08:48:40.624Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/uploadCv \n' +
+    '    | BODY : {} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {"id":"65e819af8bc6924546e604ec"}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 11:48:43\n' +
+    '    | URL : /api/v1/person/uploadCv?id=65e819af8bc6924546e604ec',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T08:48:43.436Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T08:49:43.880Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/uploadCv \n' +
+    '    | BODY : {} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {"id":"65e819af8bc6924546e604ec"}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 11:49:45\n' +
+    '    | URL : /api/v1/person/uploadCv?id=65e819af8bc6924546e604ec',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T08:49:45.985Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T08:52:09.868Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/uploadCv \n' +
+    '    | BODY : {} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {"id":"65e819af8bc6924546e604ec"}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 11:52:11\n' +
+    '    | URL : /api/v1/person/uploadCv?id=65e819af8bc6924546e604ec',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T08:52:11.909Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:01:13.792Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/getCompany/65e819af8bc6924546e604ec \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 12:01:28\n' +
+    '    | URL : /api/v1/person/getCompany/65e819af8bc6924546e604ec',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:01:28.527Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:02:43.324Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/getCompany/65e819af8bc6924546e604ec \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 12:02:44\n' +
+    '    | URL : /api/v1/person/getCompany/65e819af8bc6924546e604ec',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:02:44.884Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:08:25.394Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/getCompany/65e819af8bc6924546e604ec \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 12:08:27\n' +
+    '    | URL : /api/v1/person/getCompany/65e819af8bc6924546e604ec',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:08:27.345Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:08:48.171Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/getCompany/65e819af8bc6924546e604ec \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 12:08:49\n' +
+    '    | URL : /api/v1/person/getCompany/65e819af8bc6924546e604ec',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:08:49.745Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:10:25.354Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/getCompany/65e819af8bc6924546e604ec \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 12:10:26\n' +
+    '    | URL : /api/v1/person/getCompany/65e819af8bc6924546e604ec',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:10:26.879Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /getCompany/65e819af8bc6924546e604ec \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {"id":"65e819af8bc6924546e604ec"} \n' +
+    '    | QUERY : {}\n' +
+    '    | ERROR TIME : 06.03.2024 12:10:26\n' +
+    '    | URL : /getCompany/65e819af8bc6924546e604ec \n' +
+    '    | ERROR MESSAGE : TypeError: personDal.person.findOnePopulate is not a function\n' +
+    '    | CUSTOM INFO : undefined',
+  level: 'error',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:10:26.881Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:10:50.140Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/getCompany/65e819af8bc6924546e604ec \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 12:10:51\n' +
+    '    | URL : /api/v1/person/getCompany/65e819af8bc6924546e604ec',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:10:51.600Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:21:10.268Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/getTitle/65e819af8bc6924546e604ec \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 12:21:24\n' +
+    '    | URL : /api/v1/person/getTitle/65e819af8bc6924546e604ec',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:21:24.707Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:22:29.721Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/getTitle/65e819af8bc6924546e604ec \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 12:22:31\n' +
+    '    | URL : /api/v1/person/getTitle/65e819af8bc6924546e604ec',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:22:31.471Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:28:20.523Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/getById/65e819af8bc6924546e604ec \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 12:28:28\n' +
+    '    | URL : /api/v1/person/getById/65e819af8bc6924546e604ec',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:28:28.808Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:28:45.835Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/getById/65e819af8bc6924546e604ec \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 12:28:47\n' +
+    '    | URL : /api/v1/person/getById/65e819af8bc6924546e604ec',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:28:47.040Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:29:26.205Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/getById/65e819af8bc6924546e604ec \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 12:29:27\n' +
+    '    | URL : /api/v1/person/getById/65e819af8bc6924546e604ec',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:29:27.374Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:30:47.411Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/getById/65e819af8bc6924546e604ec \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 12:30:49\n' +
+    '    | URL : /api/v1/person/getById/65e819af8bc6924546e604ec',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:30:49.502Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/getById/65e819af8bc6924546e604ec \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 12:31:01\n' +
+    '    | URL : /api/v1/person/getById/65e819af8bc6924546e604ec',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:31:01.089Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:32:43.813Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/getById/65e819af8bc6924546e604ec \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 12:32:45\n' +
+    '    | URL : /api/v1/person/getById/65e819af8bc6924546e604ec',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:32:45.150Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:33:26.541Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/getById/65e819af8bc6924546e604ec \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 12:33:27\n' +
+    '    | URL : /api/v1/person/getById/65e819af8bc6924546e604ec',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:33:27.944Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:34:27.838Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/getById/65e819af8bc6924546e604ec \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 12:34:28\n' +
+    '    | URL : /api/v1/person/getById/65e819af8bc6924546e604ec',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:34:28.910Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:44:02.524Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/all \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 12:44:08\n' +
+    '    | URL : /api/v1/person/all',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:44:08.740Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:44:57.216Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/all \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 12:44:58\n' +
+    '    | URL : /api/v1/person/all',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:44:58.879Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:46:14.318Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/all \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 12:46:15\n' +
+    '    | URL : /api/v1/person/all',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:46:15.766Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:47:05.086Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/all \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 12:47:06\n' +
+    '    | URL : /api/v1/person/all',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:47:06.786Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:49:33.576Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/all \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 12:49:35\n' +
+    '    | URL : /api/v1/person/all',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:49:35.435Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:50:05.465Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/all \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 12:50:07\n' +
+    '    | URL : /api/v1/person/all',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:50:07.105Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:50:57.756Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/all \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 12:50:59\n' +
+    '    | URL : /api/v1/person/all',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:50:59.334Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:52:21.462Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/all \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 12:52:23\n' +
+    '    | URL : /api/v1/person/all',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:52:23.499Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /all \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | ERROR TIME : 06.03.2024 12:52:23\n' +
+    '    | URL : /all \n' +
+    '    | ERROR MESSAGE : personService.person.getAllList is not a function\n' +
+    '    | CUSTOM INFO : undefined',
+  level: 'error',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:52:23.501Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:52:41.119Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/all \n' +
+    '    | BODY : {"name":"Egemen","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":45000,"tcNumber":"14039506246","email":"egemen@expo.com","password":"12345679","country":"Turkey","city":"Ankara","company":"65e6d68c04a184b3c78f01d3","title":"65e72252578fd16e216fc98a"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 06.03.2024 12:52:42\n' +
+    '    | URL : /api/v1/person/all',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-06T09:52:42.356Z'
+}

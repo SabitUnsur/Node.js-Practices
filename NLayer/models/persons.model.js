@@ -40,11 +40,11 @@ const personSchema = new Schema({
     },
     avatar: {
         type: Schema.Types.String,
-        required: true
+        required: false
     },
     cvFile:{
         type: Schema.Types.String,
-        required: true
+        required: false
     },
     country:{
         type: Schema.Types.String,
@@ -70,4 +70,4 @@ const personSchema = new Schema({
 
 const Person = mongoose.model('Person', personSchema, 'person')
 
-modukle.exports = Person
+module.exports = Person

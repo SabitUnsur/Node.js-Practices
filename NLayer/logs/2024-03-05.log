@@ -563,3 +563,338 @@
   label: 'Uygulama V1',
   timestamp: '2024-03-05T09:48:52.192Z'
 }
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T09:52:49.421Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/titles/all \n' +
+    '    | BODY : {"name":"Senior Developer"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 12:52:55\n' +
+    '    | URL : /api/v1/titles/all',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T09:52:55.780Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T13:29:46.067Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/titles/getById/65e6ea8497d44c29dac3f2c0 \n' +
+    '    | BODY : {"name":"Senior Developer"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 16:29:48\n' +
+    '    | URL : /api/v1/titles/getById/65e6ea8497d44c29dac3f2c0',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T13:29:48.426Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /getById/65e6ea8497d44c29dac3f2c0 \n' +
+    '    | BODY : {"name":"Senior Developer"} \n' +
+    '    | PARAMS : {"id":"65e6ea8497d44c29dac3f2c0"} \n' +
+    '    | QUERY : {}\n' +
+    '    | ERROR TIME : 05.03.2024 16:29:48\n' +
+    '    | URL : /getById/65e6ea8497d44c29dac3f2c0 \n' +
+    '    | ERROR MESSAGE : ReferenceError: companyDto is not defined\n' +
+    '    | CUSTOM INFO : undefined',
+  level: 'error',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T13:29:48.435Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T13:30:43.935Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/titles/getById/65e6ea8497d44c29dac3f2c0 \n' +
+    '    | BODY : {"name":"Senior Developer"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 16:30:45\n' +
+    '    | URL : /api/v1/titles/getById/65e6ea8497d44c29dac3f2c0',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T13:30:45.727Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /getById/65e6ea8497d44c29dac3f2c0 \n' +
+    '    | BODY : {"name":"Senior Developer"} \n' +
+    '    | PARAMS : {"id":"65e6ea8497d44c29dac3f2c0"} \n' +
+    '    | QUERY : {}\n' +
+    '    | ERROR TIME : 05.03.2024 16:30:45\n' +
+    '    | URL : /getById/65e6ea8497d44c29dac3f2c0 \n' +
+    '    | ERROR MESSAGE : ReferenceError: companyDto is not defined\n' +
+    '    | CUSTOM INFO : undefined',
+  level: 'error',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T13:30:45.736Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T13:31:30.335Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/titles/getById/65e6ea8497d44c29dac3f2c0 \n' +
+    '    | BODY : {"name":"Senior Developer"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 16:31:31\n' +
+    '    | URL : /api/v1/titles/getById/65e6ea8497d44c29dac3f2c0',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T13:31:31.991Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T13:32:16.387Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/titles/getById/65e6ea8497d44c29dac3f2c0 \n' +
+    '    | BODY : {"name":"Senior Developer"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 16:32:17\n' +
+    '    | URL : /api/v1/titles/getById/65e6ea8497d44c29dac3f2c0',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T13:32:17.907Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T13:43:39.889Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T13:44:59.608Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/titles/update/65e6ea8497d44c29dac3f2c0 \n' +
+    '    | BODY : {"name":"Junior Developer"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 16:45:14\n' +
+    '    | URL : /api/v1/titles/update/65e6ea8497d44c29dac3f2c0',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T13:45:14.523Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/titles/create \n' +
+    '    | BODY : {"name":"Senior Developer"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 16:46:29\n' +
+    '    | URL : /api/v1/titles/create',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T13:46:29.137Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/titles/create \n' +
+    '    | BODY : {"name":"Mid Developer"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 16:46:42\n' +
+    '    | URL : /api/v1/titles/create',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T13:46:42.296Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/titles/create \n' +
+    '    | BODY : {"name":"Junior Analyst"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 16:46:58\n' +
+    '    | URL : /api/v1/titles/create',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T13:46:58.322Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/titles/create \n' +
+    '    | BODY : {"name":"Mid Analyst"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 16:47:00\n' +
+    '    | URL : /api/v1/titles/create',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T13:47:00.970Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/titles/create \n' +
+    '    | BODY : {"name":"Senior Analyst"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 16:47:04\n' +
+    '    | URL : /api/v1/titles/create',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T13:47:04.802Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T13:53:07.857Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T13:53:37.369Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/titles/delete \n' +
+    '    | BODY : {"name":"Senior Analyst"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {"id":"65e6ea8497d44c29dac3f2c0"}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 16:54:04\n' +
+    '    | URL : /api/v1/titles/delete?id=65e6ea8497d44c29dac3f2c0',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T13:54:04.590Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T13:55:38.073Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T13:55:42.169Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/titles/delete \n' +
+    '    | BODY : {"name":"Senior Analyst"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {"id":"65e6ea8497d44c29dac3f2c0"}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 16:55:44\n' +
+    '    | URL : /api/v1/titles/delete?id=65e6ea8497d44c29dac3f2c0',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T13:55:44.295Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/titles/delete \n' +
+    '    | BODY : {"name":"Senior Analyst"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {"id":"65e6ea8497d44c29dac3f2c0"}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 16:55:46\n' +
+    '    | URL : /api/v1/titles/delete?id=65e6ea8497d44c29dac3f2c0',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T13:55:46.121Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/titles/delete \n' +
+    '    | BODY : {"name":"Senior Analyst"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {"id":"65e6ea8497d44c29dac3f2c0"}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 16:55:46\n' +
+    '    | URL : /api/v1/titles/delete?id=65e6ea8497d44c29dac3f2c0',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T13:55:46.711Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/titles/delete \n' +
+    '    | BODY : {"name":"Senior Analyst"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {"id":"65e6ea8497d44c29dac3f2c0"}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 16:56:18\n' +
+    '    | URL : /api/v1/titles/delete?id=65e6ea8497d44c29dac3f2c0',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T13:56:18.924Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T13:56:40.996Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/titles/delete \n' +
+    '    | BODY : {"name":"Senior Analyst"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {"id":"65e6ea8497d44c29dac3f2c0"}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 05.03.2024 16:56:42\n' +
+    '    | URL : /api/v1/titles/delete?id=65e6ea8497d44c29dac3f2c0',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-05T13:56:42.626Z'
+}
