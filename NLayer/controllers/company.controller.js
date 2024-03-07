@@ -83,7 +83,7 @@ exports.updateCompany = async (req, res) => {
             })
         }
         const json = await companyService.company.updateCompany(req)
-        res.status(StatusCodes.OK).json({ ...baseResponse, data: json, success: true, timestamp: Date.now(), code: StatusCodes.CREATED, message: 'Company updated successfully' })
+        res.status(StatusCodes.OK).json({ ...baseResponse, data: json, success: true, timestamp: Date.now(), code: StatusCodes.OK, message: 'Company updated successfully' })
 
 
     } catch (error) {

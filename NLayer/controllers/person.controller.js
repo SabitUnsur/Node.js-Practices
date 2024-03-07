@@ -20,6 +20,23 @@ exports.getAllPersons= async (req,res) => {
     }
 }
 
+exports.getAllPersonsWithPagination= async (req,res) => {
+    try {
+        const json = await personService.person.getAllListWithPagination(req)
+        res.status(StatusCodes.OK).json({ ...baseResponse, data: json, success: true, timestamp: Date.now(), code: StatusCodes.OK, message: 'successfully' })
+    } catch (error) {
+        utils.helpers.logToError(error, req)
+        res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
+            ...baseResponse,
+            error: true,
+            success: false,
+            timestamp: Date.now(),
+            code: StatusCodes.INTERNAL_SERVER_ERROR,
+            message: error.message
+        })
+    }
+}
+
 exports.getPersonById=async (req,res) => { 
     try {
         const isInvalid = utils.helpers.handleValidation(req)
@@ -72,7 +89,31 @@ exports.createPerson= async (req,res) => {
     }
  }
 
-exports.updatePerson= (req,res) => { }
+exports.updatePerson= async (req,res) => {
+    try {
+        const isInvalid = utils.helpers.handleValidation(req)
+        if (isInvalid) {
+            return res.status(StatusCodes.BAD_REQUEST).json({
+                ...baseResponse,
+                ...isInvalid
+            })
+        }
+        const json = await personService.person.updatePerson(req)
+        res.status(StatusCodes.OK).json({ ...baseResponse, data: json, success: true, timestamp: Date.now(), code: StatusCodes.OK, message: 'Person updated successfully' })
+
+
+    } catch (error) {
+        utils.helpers.logToError(error, req)
+        res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
+            ...baseResponse,
+            error: true,
+            success: false,
+            timestamp: Date.now(),
+            code: StatusCodes.INTERNAL_SERVER_ERROR,
+            message: error.message 
+        })
+    }
+ }
 
 exports.deletePersonById= (req,res) => { }
 
