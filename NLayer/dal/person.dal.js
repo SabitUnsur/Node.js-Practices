@@ -11,6 +11,13 @@ const PersonDataAccess = {
     async listAll(where = {}, populate) {
         return await Person.find(where).select('_id name surname birthDate gender salary tcNumber email avatar cvFile country city title company').populate(populate)
     },
+    async listAllWithPagination(where = {}, populate,limit,skip,sort) {
+        return await Person.find(where)
+        .limit(limit)
+        .skip(skip)
+        .sort(sort)
+        .select('_id name surname birthDate gender salary tcNumber email avatar cvFile country city title company').populate(populate)
+    },
     async deleteById(id) {
         return await Person.findByIdAndDelete({ _id: id })
     },
