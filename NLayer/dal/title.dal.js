@@ -14,7 +14,7 @@ const TitleDataAccess = {
         return await Title.findByIdAndDelete({ _id: id })
     },
     async getTitleById(id) { 
-        return await Title.findById({_id: id}).select('_id name createdAt updatedAt')
+        return await Title.findById({_id: id})
     }
 } 
 
