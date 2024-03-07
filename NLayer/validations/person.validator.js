@@ -13,7 +13,7 @@ const PersonValidator = {
             body('gender').not().isEmpty(),
             body('salary').isNumeric(),
             body('tcNumber').isNumeric().not().equals(0).isLength({ min: 11, max: 11 }).custom(async (value,{req})=>{
-                const result = await utils.helpers.tcNumberValidator(value)
+                const result = await utils.helpers.validateTcNumber(value)
                 if (!result) {
                     throw new Error('Invalid TC number')
                 }
@@ -66,7 +66,7 @@ const PersonValidator = {
             body('gender').not().isEmpty(),
             body('salary').isNumeric(),
             body('tcNumber').isNumeric().not().equals(0).isLength({ min: 11, max: 11 }).custom(async (value,{req})=>{
-                const result = await utils.helpers.tcNumberValidator(value)
+                const result = await utils.helpers.validateTcNumber(value)
                 if (!result) {
                     throw new Error('Invalid TC number')
                 }
@@ -86,6 +86,15 @@ const PersonValidator = {
             body('company').isMongoId(),
             body('title').isMongoId()
         ]
+    },
+    validateDeleteById(){
+        return [query('id').isMongoId().withMessage('Invalid person id')]
+    },
+    validateUpdateCv(){ 
+        return [query('id').isMongoId().withMessage('Invalid person id')]
+    },
+    validateUpdateAvatar(){
+        return [query('id').isMongoId().withMessage('Invalid person id')]
     }
 }
 
