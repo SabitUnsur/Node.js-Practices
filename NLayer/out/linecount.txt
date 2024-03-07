@@ -75,3 +75,81 @@ validations\index.js, code is 5, comment is 0, blank is 0.
 validations\person.validator.js, code is 51, comment is 0, blank is 3.
 validations\title.validator.js, code is 16, comment is 0, blank is 2.
 ===============================================================================
+===============================================================================
+EXTENSION NAME : linecount
+EXTENSION VERSION : 0.1.7
+-------------------------------------------------------------------------------
+count time : 2024-03-07 11:56:23
+count workspace : c:\Users\sabit\OneDrive\Masaüstü\Node.js\NLayer
+total files : 66
+total code lines : 28845
+total comment lines : 31
+total blank lines : 188
+
+.env, code is 11, comment is 0, blank is 1.
+configs\index.js, code is 6, comment is 0, blank is 1.
+configs\loggerConfig.js, code is 22, comment is 0, blank is 2.
+configs\serverConfig.js, code is 4, comment is 0, blank is 1.
+consts\auth.const.js, code is 6, comment is 0, blank is 1.
+consts\general.const.js, code is 6, comment is 0, blank is 1.
+consts\index.js, code is 8, comment is 0, blank is 1.
+consts\router.prefix.const.js, code is 8, comment is 0, blank is 2.
+controllers\auth.controller.js, code is 2, comment is 0, blank is 1.
+controllers\common.controller.js, code is 66, comment is 2, blank is 2.
+controllers\company.controller.js, code is 160, comment is 4, blank is 16.
+controllers\file.controller.js, code is 45, comment is 1, blank is 5.
+controllers\index.js, code is 12, comment is 0, blank is 1.
+controllers\person.controller.js, code is 267, comment is 0, blank is 22.
+controllers\titles.controller.js, code is 112, comment is 0, blank is 12.
+dal\company.dal.js, code is 19, comment is 0, blank is 2.
+dal\index.js, code is 8, comment is 0, blank is 1.
+dal\person.dal.js, code is 35, comment is 0, blank is 3.
+dal\title.dal.js, code is 19, comment is 0, blank is 2.
+db\index.js, code is 4, comment is 0, blank is 0.
+db\mongooseConnection.js, code is 17, comment is 1, blank is 0.
+dto\baseresponse.dto.js, code is 10, comment is 0, blank is 0.
+dto\company.dto.js, code is 10, comment is 0, blank is 1.
+dto\person.company.dto.js, code is 6, comment is 0, blank is 1.
+dto\person.dto.js, code is 19, comment is 0, blank is 1.
+dto\person.title.dto.js, code is 5, comment is 0, blank is 1.
+dto\title.dto.js, code is 7, comment is 0, blank is 1.
+jsons\cities.json, code is 20541, comment is 0, blank is 1.
+jsons\countries.json, code is 1480, comment is 0, blank is 0.
+logs\2024-02-26.log, code is 42, comment is 0, blank is 0.
+logs\2024-02-28.log, code is 265, comment is 0, blank is 0.
+logs\2024-03-04.log, code is 339, comment is 0, blank is 0.
+logs\2024-03-05.log, code is 900, comment is 0, blank is 0.
+logs\2024-03-06.log, code is 886, comment is 0, blank is 0.
+logs\2024-03-07.log, code is 375, comment is 0, blank is 0.
+middleware\auth.middleware.js, code is 25, comment is 0, blank is 1.
+middleware\index.js, code is 10, comment is 0, blank is 1.
+middleware\logger.middleware.js, code is 11, comment is 0, blank is 0.
+middleware\singlecvupload.middleware.js, code is 20, comment is 0, blank is 2.
+middleware\singleimageupload.middleware.js, code is 20, comment is 0, blank is 2.
+models\company.model.js, code is 30, comment is 0, blank is 3.
+models\persons.model.js, code is 70, comment is 0, blank is 3.
+models\titles.model.js, code is 18, comment is 0, blank is 3.
+package-lock.json, code is 1863, comment is 0, blank is 2.
+package.json, code is 20, comment is 0, blank is 0.
+router\auth.router.js, code is 8, comment is 0, blank is 2.
+router\common.router.js, code is 9, comment is 0, blank is 2.
+router\company.router.js, code is 14, comment is 0, blank is 1.
+router\index.js, code is 12, comment is 0, blank is 1.
+router\person.router.js, code is 19, comment is 1, blank is 2.
+router\titles.router.js, code is 12, comment is 0, blank is 2.
+server.js, code is 32, comment is 4, blank is 8.
+services\common.service.js, code is 17, comment is 1, blank is 3.
+services\company.service.js, code is 147, comment is 4, blank is 10.
+services\file.service.js, code is 38, comment is 0, blank is 4.
+services\index.js, code is 10, comment is 0, blank is 1.
+services\person.service.js, code is 368, comment is 9, blank is 17.
+services\title.service.js, code is 70, comment is 2, blank is 11.
+utils\helper.js, code is 121, comment is 2, blank is 15.
+utils\index.js, code is 6, comment is 0, blank is 0.
+utils\logger.js, code is 4, comment is 0, blank is 1.
+validations\common.validator.js, code is 7, comment is 0, blank is 1.
+validations\company.validator.js, code is 23, comment is 0, blank is 2.
+validations\index.js, code is 5, comment is 0, blank is 0.
+validations\person.validator.js, code is 98, comment is 0, blank is 3.
+validations\title.validator.js, code is 16, comment is 0, blank is 2.
+===============================================================================
