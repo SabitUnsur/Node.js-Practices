@@ -115,7 +115,32 @@ exports.updatePerson= async (req,res) => {
     }
  }
 
-exports.deletePersonById= (req,res) => { }
+exports.deletePersonById= async(req,res) => { 
+        const _response = { ...baseResponse } 
+        try {
+            const isInvalid = utils.helpers.handleValidation(req)
+            if (isInvalid) {
+                return res.status(StatusCodes.BAD_REQUEST).json({
+                    ...baseResponse,
+                    ...isInvalid
+                })
+            }
+            const json = await personService.person.deletePersonById(req)
+            res.status(StatusCodes.OK).json({ ...baseResponse, data: json, success: true, timestamp: Date.now(), code: StatusCodes.OK, message: 'Person deleted successfully' })
+    
+        } catch (error) {
+            utils.helpers.logToError(error, req)
+            res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
+                ..._response,
+                error: true,
+                success: false,
+                timestamp: Date.now(),
+                code: StatusCodes.INTERNAL_SERVER_ERROR,
+                message: error.message
+            })
+        }
+    
+}
 
 exports.uploadAvatar = async (req, res) => {
     try {
@@ -141,6 +166,30 @@ exports.uploadAvatar = async (req, res) => {
     }
 }
 
+exports.updateAvatar = async (req, res) => {
+    try {
+        const isInvalid = utils.helpers.handleValidation(req)
+        if (isInvalid) {
+            return res.status(StatusCodes.BAD_REQUEST).json({
+                ...baseResponse,
+                ...isInvalid
+            })
+        }
+        const json = await personService.person.updateAvatar(req)
+        res.status(StatusCodes.OK).json(json)
+    } catch (error) {
+        utils.helpers.logToError(error, req)
+        res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
+            ...baseResponse,
+            error: true,
+            success: false,
+            timestamp: Date.now(),
+            code: StatusCodes.INTERNAL_SERVER_ERROR,
+            message: error.message
+        })
+    }
+ }
+
 
 exports.uploadCv = async (req, res) => {
     try {
@@ -165,6 +214,30 @@ exports.uploadCv = async (req, res) => {
         })
     }
 }
+
+exports.updateCv = async (req, res) => {
+    try {
+        const isInvalid = utils.helpers.handleValidation(req)
+        if (isInvalid) {
+            return res.status(StatusCodes.BAD_REQUEST).json({
+                ...baseResponse,
+                ...isInvalid
+            })
+        }
+        const json = await personService.person.updateCv(req)
+        res.status(StatusCodes.OK).json(json)
+    } catch (error) {
+        utils.helpers.logToError(error, req)
+        res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
+            ...baseResponse,
+            error: true,
+            success: false,
+            timestamp: Date.now(),
+            code: StatusCodes.INTERNAL_SERVER_ERROR,
+            message: error.message
+        })
+    }
+ }
 
 exports.getCompanyByPersonId = async (req, res) => { 
     try {
