@@ -3,6 +3,32 @@ const { StatusCodes } = require('http-status-codes')
 const baseResponse = require('../dto/baseresponse.dto')
 const utils = require('../utils/index')
 
+exports.signIn = async (req, res) => {
+    try {
+        const isInvalid = utils.helpers.handleValidation(req)
+        if (isInvalid) {
+            return res.status(StatusCodes.BAD_REQUEST).json({
+                ...baseResponse,
+                ...isInvalid
+            })
+        }
+        const json = await personService.person.signIn(req)
+        res.status(StatusCodes.OK).json({ ...baseResponse, data: json, success: true, timestamp: Date.now(), code: StatusCodes.OK, message: ' Successfully logged in' })
+
+
+    } catch (error) {
+        utils.helpers.logToError(error, req)
+        res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
+            ...baseResponse,
+            error: true,
+            success: false,
+            timestamp: Date.now(),
+            code: StatusCodes.INTERNAL_SERVER_ERROR,
+            message: error.message
+        })
+    }
+}
+
 exports.getAllPersons= async (req,res) => {
     try {
         const json = await personService.person.getAllList(req)
