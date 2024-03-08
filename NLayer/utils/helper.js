@@ -6,11 +6,11 @@ const os = require('os')
 const { validationResult } = require('express-validator')
 const { StatusCodes } = require('http-status-codes')
 
-const createToken = () => {
+const createToken = (userId,fullName,email) => {
     const token = jwt.sign({
-        userId: '',
-        fullName: '',
-        email: '',
+        userId,
+        fullName,
+        email
     }, process.env.SECRET_KEY, {
         issuer: 'localhost',
         expiresIn: process.env.EXPIRESIN
