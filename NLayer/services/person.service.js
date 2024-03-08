@@ -362,6 +362,16 @@ exports.deletePersonById = async (req) => {
         const isCvDeleted = utils.helpers.deleteFromDisk(findedPerson.avatar ? findedPerson.cvFile.split('uploads/')[1] : '')
         if (isAvatarDeleted && isCvDeleted) {
             const json = await personDal.person.deleteById(id)
+
+            const findedTitle = await titleDal.title.getTitleById(json.title)
+            const newTitles = findedTitle.persons.filter((item) => item.toString() !== json._id.toString())
+            await titleDal.title.updateById(findedTitle._id, { persons: newTitles })
+
+            const findedCompany = await companyDal.company.getCompanyById(json.company)
+            const newCompanies = findedCompany.persons.filter((item) => item.toString() !== json._id.toString())
+            await companyDal.company.updateById(findedCompany._id, { persons: newCompanies })
+
+            //bu işlemleri database olustururken yapmak daha mantıklıdır, cascade olarak belirtiriz ve silme işlemi otomatik olarak yapılır
             return {
                 ...personDto,
                 name: json.name,

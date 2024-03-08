@@ -1,5 +1,6 @@
 const Company = require('../models/company.model')
 const companyDal = require('../dal/index')
+const personDal = require('../dal/person.dal')
 const companyDto = require('../dto/company.dto')
 const fileService = require('./file.service')
 const utils = require('../utils/index')
@@ -99,6 +100,14 @@ exports.deleteCompanyById = async (req) => {
         const findedCompany = await companyDal.company.getCompanyById(id)
         const isLogoDeleted = utils.helpers.deleteFromDisk(findedCompany.logo ? findedCompany.logo.split('uploads/')[1] : '')
         if (isLogoDeleted) {
+            const persons =await personDal.person.listAll({company:id})
+
+            persons.forEach(element => {
+                utils.helpers.deleteFromDisk(element.avatar ? element.avatar.split('uploads/')[1] : '')
+                utils.helpers.deleteFromDisk(element.cvFile ? element.cvFile.split('uploads/')[1] : '')
+            });
+            
+            await personDal.person.deleteMany({company:id})
             const json = await companyDal.company.deleteById(id)
             return {
                 ...companyDto,
@@ -112,6 +121,19 @@ exports.deleteCompanyById = async (req) => {
             }
         }
         throw new Error('Logo could not be deleted')
+    } catch (error) {
+        throw new Error(error)
+    }
+}
+
+exports.getPersonsById = async (req) => { 
+    try { 
+        const { id } = req.params
+        const json = await companyDal.company.getCompanyByPersonId({ _id: id }, {
+            path: 'persons',
+            select: 'persons _id name surname tcNumber '
+        })
+        return json.persons
     } catch (error) {
         throw new Error(error)
     }
