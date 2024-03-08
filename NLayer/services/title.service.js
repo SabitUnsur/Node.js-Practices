@@ -1,7 +1,9 @@
 const Title = require('../models/titles.model')
 const titleDal = require('../dal/index')
 const titleDto = require('../dto/title.dto')
-
+const personDal = require('../dal/person.dal')
+const companyDal = require('../dal/company.dal')
+const utils = require('../utils/index')
 
 exports.createTitle = async (req) => {
     try {
@@ -34,6 +36,20 @@ exports.listTitles = async () => {
     }
 }
 
+exports.getPersonsByTitleId = async (req) => { 
+    try {
+        const { id } = req.params
+        const json = await titleDal.title.getPersonsByTitleId({_id: id}, 
+            {
+                path: 'persons',
+                select: 'name _id surname tcNumber'
+            
+            })
+        return json.persons
+    } catch (error) {
+        throw new Error(error)
+    }
+}
 
 exports.getTitleById = async (req) => { 
     try {
@@ -73,6 +89,15 @@ exports.deleteTitleById = async (req) => {
     try {
         const { id } = req.query
         const json = await titleDal.title.deleteById(id)
+        const persons = await personDal.listAll({title: id})
+        persons.forEach(async (person) => {
+            utils.helpers.deleteFromDisk(person.avatar ? person.avatar.split('uploads/')[1] : '')
+            utils.helpers.deleteFromDisk(person.cvFile ? person.cvFile.split('uploads/')[1] : '')
+            const findedCompany = await companyDal.getCompanyById(person.company)
+            const newPersonsForCompany = findedCompany.persons.filter((item) => item.toString() != person._id.toString())
+            await titleDal.updateById(findedCompany._id, { persons: newPersonsForCompany })
+        });
+        await personDal.deleteMany({title: id})
         return {...titleDto,name : json.name, id: json.id, createdAt: json.createdAt, updatedAt: json.updatedAt}
     }catch (error) {
         throw new Error(error) 

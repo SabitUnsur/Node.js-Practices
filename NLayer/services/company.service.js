@@ -1,6 +1,7 @@
 const Company = require('../models/company.model')
 const companyDal = require('../dal/index')
 const personDal = require('../dal/person.dal')
+const titleDal = require('../dal/title.dal')
 const companyDto = require('../dto/company.dto')
 const fileService = require('./file.service')
 const utils = require('../utils/index')
@@ -102,10 +103,13 @@ exports.deleteCompanyById = async (req) => {
         if (isLogoDeleted) {
             const persons =await personDal.person.listAll({company:id})
 
-            persons.forEach(element => {
-                utils.helpers.deleteFromDisk(element.avatar ? element.avatar.split('uploads/')[1] : '')
-                utils.helpers.deleteFromDisk(element.cvFile ? element.cvFile.split('uploads/')[1] : '')
-            });
+            persons.forEach(async (person) => {
+                utils.helpers.deleteFromDisk(person.avatar ? person.avatar.split('uploads/')[1] : '')
+                utils.helpers.deleteFromDisk(person.cvFile ? person.cvFile.split('uploads/')[1] : '')
+                const findedTitle = await titleDal.getTitleById(person.title)
+                const newPersonsForTitle = findedTitle.persons.filter((item) => item.toString() != findedTitle._id.toString())
+                await titleDal.updateById(findedTitle._id, { persons: newPersonsForTitle })
+            })
             
             await personDal.person.deleteMany({company:id})
             const json = await companyDal.company.deleteById(id)
