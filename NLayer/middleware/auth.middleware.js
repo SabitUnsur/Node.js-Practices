@@ -6,7 +6,6 @@ module.exports = (req, res, next) => {
     try {
         if (!req.url.includes('/api/v1/person/signIn')) {
             const token = req.headers.authorization.split(' ')[1]
-            console.log(token)
             const decodedToken = helpers.helpers.verifyToken(token)
             if (decodedToken.decodedToken == null) {
                 return res.status(StatusCodes.UNAUTHORIZED).json({
