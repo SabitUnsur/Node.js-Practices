@@ -1,5 +1,6 @@
 const Company = require('../models/company.model')
 
+
 const CompanyDataAccess = { 
     async create(companyModel) {
         return await companyModel.save()
@@ -15,7 +16,10 @@ const CompanyDataAccess = {
     },
     async getCompanyById(id) { 
         return await Company.findById({_id: id}).select('_id name year description logo createdAt updatedAt')
-    }
+    },
+    async getPersonsById(where, populate) { 
+        return await Company.findOne(where).populate(populate)
+    },
 } 
 
 module.exports = CompanyDataAccess

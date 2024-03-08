@@ -1,6 +1,5 @@
 const Person = require('../models/persons.model')
 
-
 const PersonDataAccess = { 
     async create(personModel) {
         return await personModel.save()
@@ -19,7 +18,8 @@ const PersonDataAccess = {
         .select('_id name surname birthDate gender salary tcNumber email avatar cvFile country city title company').populate(populate)
     },
     async deleteById(id) {
-        return await Person.findByIdAndDelete({ _id: id })
+        return await Person.findByIdAndDelete({ _id: id })   
+
     },
     async getPersonById(id) { 
         return await Person.findById({_id: id})
@@ -33,6 +33,9 @@ const PersonDataAccess = {
     async getTitleByPersonId(where, populate) { 
         return await Person.findOne(where).populate(populate)
     },
+    async deleteMany(where){
+        return await Person.deleteMany(where) 
+    }
 } 
 
 module.exports = PersonDataAccess
