@@ -9,8 +9,10 @@ router.get('/getById/:id',[personValidator.personValidator.validateGetPersonById
 router.post('/create',[personValidator.personValidator.validateCreatePerson()],controller.personController.createPerson)
 router.put('/update/:id',[personValidator.personValidator.validateUpdatePerson()],controller.personController.updatePerson)
 router.post('/uploadCv',[personValidator.personValidator.validateUploadCv()] ,controller.personController.uploadCv)
+router.post('/updateCv',[personValidator.personValidator.validateUpdateCv()] ,controller.personController.updateCv)
 router.post('/uploadAvatar',[personValidator.personValidator.validateUploadAvatar()] ,controller.personController.uploadAvatar)
-router.delete('/delete/:id', controller.personController.deletePersonById)
+router.post('/updateAvatar',[personValidator.personValidator.validateUpdateAvatar()] ,controller.personController.updateAvatar)
+router.delete('/delete',[personValidator.personValidator.validateDeleteById()] ,controller.personController.deletePersonById) //queryden alınacagı zaman :id yazmaya gerek yok 
 router.get('/getCompany/:id',[personValidator.personValidator.validateGetCompanyByPersonId()] ,controller.personController.getCompanyByPersonId)
 router.get('/getTitle/:id',[personValidator.personValidator.validateGetTitleByPersonId()] ,controller.personController.getTitleByPersonId)
 
