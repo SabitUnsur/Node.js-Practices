@@ -15,7 +15,10 @@ const TitleDataAccess = {
     },
     async getTitleById(id) { 
         return await Title.findById({_id: id})
-    }
+    },
+    async getPersonsByTitleId(where, populate) { 
+        return await Title.findOne(where).populate(populate)
+    } 
 } 
 
 module.exports = TitleDataAccess
