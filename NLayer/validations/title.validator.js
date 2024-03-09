@@ -13,6 +13,9 @@ const TitleValidator = {
     validateDeleteById(){
         return [query('id').isMongoId().withMessage('Invalid title id')]
     },
+    validateGetPersonsById(){
+        return [param('id').isMongoId().withMessage('Invalid title id')]
+    }
 }
 
 module.exports = TitleValidator

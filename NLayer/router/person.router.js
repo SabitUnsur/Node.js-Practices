@@ -15,6 +15,7 @@ router.post('/updateAvatar',[personValidator.personValidator.validateUpdateAvata
 router.delete('/delete',[personValidator.personValidator.validateDeleteById()] ,controller.personController.deletePersonById) //queryden alınacagı zaman :id yazmaya gerek yok 
 router.get('/getCompany/:id',[personValidator.personValidator.validateGetCompanyByPersonId()] ,controller.personController.getCompanyByPersonId)
 router.get('/getTitle/:id',[personValidator.personValidator.validateGetTitleByPersonId()] ,controller.personController.getTitleByPersonId)
+router.post('/signIn',[personValidator.personValidator.validateSignIn()] ,controller.personController.signIn)
 
 module.exports = {
     person: router

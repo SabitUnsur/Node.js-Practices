@@ -22,7 +22,7 @@ exports.getAllCompany = async (req, res) => {
     }
 }
 
-exports.getPersonsById() = async (req, res) => {    
+exports.getPersonsById = async (req, res) => {    
     try {
         const isInvalid = utils.helpers.handleValidation(req)
         if (isInvalid) {

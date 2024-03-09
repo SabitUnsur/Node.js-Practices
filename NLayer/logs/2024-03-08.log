@@ -1,0 +1,94 @@
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-08T19:32:33.921Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/delete \n' +
+    '    | BODY : {"name":"Mehmet","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":55000,"tcNumber":"59281542242","email":"mehmet@expoisete.com","password":"18305679","country":"Turkey","city":"Konya","company":"65e6d68c04a184b3c78f01d3","title":"65e72235578fd16e216fc986"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {"id":"65e819af8bc6924546e604ec"}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 08.03.2024 22:32:54\n' +
+    '    | URL : /api/v1/person/delete?id=65e819af8bc6924546e604ec',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-08T19:32:54.637Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/delete \n' +
+    '    | BODY : {"name":"Mehmet","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":55000,"tcNumber":"59281542242","email":"mehmet@expoisete.com","password":"18305679","country":"Turkey","city":"Konya","company":"65e6d68c04a184b3c78f01d3","title":"65e72235578fd16e216fc986"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {"id":"65e98027cbc72f14b7fa1e70"}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 08.03.2024 22:33:48\n' +
+    '    | URL : /api/v1/person/delete?id=65e98027cbc72f14b7fa1e70',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-08T19:33:48.416Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-08T19:42:37.059Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/create \n' +
+    '    | BODY : {"name":"Mehmet","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":55000,"tcNumber":"59281542242","email":"mehmet@expoisete.com","password":"18305679","country":"Turkey","city":"Konya","company":"65e6d68c04a184b3c78f01d3","title":"65e72235578fd16e216fc986"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 08.03.2024 22:42:49\n' +
+    '    | URL : /api/v1/person/create',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-08T19:42:49.744Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /create \n' +
+    '    | BODY : {"name":"Mehmet","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":55000,"tcNumber":"59281542242","email":"mehmet@expoisete.com","password":"18305679","country":"Turkey","city":"Konya","company":"65e6d68c04a184b3c78f01d3","title":"65e72235578fd16e216fc986"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | ERROR TIME : 08.03.2024 22:42:49\n' +
+    '    | URL : /create \n' +
+    "    | ERROR MESSAGE : TypeError: Cannot read properties of undefined (reading 'push')\n" +
+    '    | CUSTOM INFO : undefined',
+  level: 'error',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-08T19:42:49.774Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/create/ \n' +
+    '    | BODY : {"name":"Mehmet","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":55000,"tcNumber":"59281542242","email":"mehmet@expoisete.com","password":"18305679","country":"Turkey","city":"Konya","company":"65e6d68c04a184b3c78f01d3","title":"65e72235578fd16e216fc986"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 08.03.2024 22:43:02\n' +
+    '    | URL : /api/v1/person/create/',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-08T19:43:02.548Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/delete \n' +
+    '    | BODY : {"name":"Mehmet","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":55000,"tcNumber":"59281542242","email":"mehmet@expoisete.com","password":"18305679","country":"Turkey","city":"Konya","company":"65e6d68c04a184b3c78f01d3","title":"65e72235578fd16e216fc986"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {"id":"65eb6a39f2464b98a23883f4"}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 08.03.2024 22:44:37\n' +
+    '    | URL : /api/v1/person/delete?id=65eb6a39f2464b98a23883f4',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-08T19:44:37.425Z'
+}

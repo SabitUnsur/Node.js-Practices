@@ -1,0 +1,88 @@
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-08T21:26:37.249Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-08T21:27:56.189Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/create \n' +
+    '    | BODY : {"name":"Mehmet","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":55000,"tcNumber":"59281542242","email":"mehmet@expoisete.com","password":"18305679","country":"Turkey","city":"Konya","company":"65e6d68c04a184b3c78f01d3","title":"65e72235578fd16e216fc986"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 09.03.2024 0:27:58\n' +
+    '    | URL : /api/v1/person/create',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-08T21:27:58.457Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /create \n' +
+    '    | BODY : {"name":"Mehmet","surname":"Özbilgiç","birthDate":1038324000000,"gender":"E","salary":55000,"tcNumber":"59281542242","email":"mehmet@expoisete.com","password":"18305679","country":"Turkey","city":"Konya","company":"65e6d68c04a184b3c78f01d3","title":"65e72235578fd16e216fc986"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | ERROR TIME : 09.03.2024 0:27:58\n' +
+    '    | URL : /create \n' +
+    "    | ERROR MESSAGE : TypeError: Cannot read properties of undefined (reading 'push')\n" +
+    '    | CUSTOM INFO : undefined',
+  level: 'error',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-08T21:27:58.486Z'
+}
+{
+  message: 'Connected to MongoDB',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-08T21:28:26.467Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/signIn \n' +
+    '    | BODY : {"email":"mehmet@expoisete.com","password":"18305679"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 09.03.2024 0:28:53\n' +
+    '    | URL : /api/v1/person/signIn',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-08T21:28:53.294Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/all \n' +
+    '    | BODY : {"email":"mehmet@expoisete.com","password":"18305679"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 09.03.2024 0:29:01\n' +
+    '    | URL : /api/v1/person/all',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-08T21:29:01.351Z'
+}
+{
+  message: 'IP Adresi : ::1 \n' +
+    '    | PATH : /api/v1/person/all \n' +
+    '    | BODY : {"email":"mehmet@expoisete.com","password":"18305679"} \n' +
+    '    | PARAMS : {} \n' +
+    '    | QUERY : {}\n' +
+    '    | MIDDLEWARE ACCESS TIME : 09.03.2024 0:29:19\n' +
+    '    | URL : /api/v1/person/all',
+  level: 'info',
+  api: 'NODE SERVER',
+  label: 'Uygulama V1',
+  timestamp: '2024-03-08T21:29:19.542Z'
+}

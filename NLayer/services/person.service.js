@@ -3,10 +3,30 @@ const personDal = require('../dal/index')
 const utils = require('../utils/index')
 const personDto = require('../dto/person.dto')
 const fileService = require('./file.service')
-const titleDal = require('../dal/index') 
+const titleDal = require('../dal/index')
 const companyDal = require('../dal/index')
 const personCompanyDto = require('../dto/person.company.dto')
 const personTitleDto = require('../dto/person.title.dto')
+
+exports.signIn = async (req) => {
+    try {
+        const {
+            email,
+            password
+        } = req.body
+
+        const _password = utils.helpers.hashToPassword(password)
+        const json = await personDal.person.findOne({ email, password: _password })
+        if (json) {
+            const token = utils.helpers.createToken(json._id, json.name + "" + json.surname, json.email)
+            return { fullName: json.name + "" + json.surname, email: json.email, id: json._id, token }
+        }
+        return null
+
+    } catch (error) {
+        throw new Error(error)
+    }
+}
 
 exports.createPerson = async (req) => {
     try {
@@ -24,7 +44,7 @@ exports.createPerson = async (req) => {
             company,
             title
         } = req.body
-        const findedTitle = await titleDal.title.getTitleById(title) 
+        const findedTitle = await titleDal.title.getTitleById(title)
         const findedCompany = await companyDal.company.getCompanyById(company)
         const person = new Person({
             name,
@@ -109,13 +129,13 @@ exports.uploadAvatar = async (req) => {
     }
 }
 
-exports.updateAvatar = async (req) => { 
+exports.updateAvatar = async (req) => {
     try {
         const { id } = req.query
         const str = await fileService.uploadImage(req)
         const findedPerson = await personDal.person.getPersonById(id)
         const isAvatarDeleted = utils.helpers.deleteFromDisk(findedPerson.avatar ? findedPerson.avatar.split('uploads/')[1] : '')
-        if(isAvatarDeleted){ 
+        if (isAvatarDeleted) {
             const json = await personDal.person.updateById(id, { avatar: str })
             return {
                 ...personDto,
@@ -180,7 +200,7 @@ exports.updateCv = async (req) => {
         const str = await fileService.uploadCv(req)
         const findedPerson = await personDal.person.getPersonById(id)
         const isCvDeleted = utils.helpers.deleteFromDisk(findedPerson.cvFile ? findedPerson.cvFile.split('uploads/')[1] : '')
-        if(isCvDeleted){ 
+        if (isCvDeleted) {
             const json = await personDal.person.updateById(id, { cvFile: str })
             return {
                 ...personDto,

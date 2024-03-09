@@ -95,6 +95,13 @@ const PersonValidator = {
     },
     validateUpdateAvatar(){
         return [query('id').isMongoId().withMessage('Invalid person id')]
+    },
+    validateSignIn(){
+        return [
+            body('email').not().isEmpty().isEmail(),
+            body('password').not().isEmpty(),
+            body('password').isLength({ min: 8, max: 16 })
+        ]
     }
 }
 

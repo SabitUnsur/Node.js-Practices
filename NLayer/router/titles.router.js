@@ -8,6 +8,7 @@ router.get('/getById/:id',[titleValidator.titleValidator.validateFindById()] ,co
 router.post('/create',[titleValidator.titleValidator.validateCreateTitle()] ,controller.titlesController.createTitle)
 router.put('/update/:id',[titleValidator.titleValidator.validateUpdateTitle()] ,controller.titlesController.updateTitle)
 router.delete('/delete',[titleValidator.titleValidator.validateDeleteById()] ,controller.titlesController.deleteTitleById)
+router.get('/person/:id',[titleValidator.titleValidator.validateGetPersonsById()] ,controller.titlesController.getPersonsByTitleId)
 
 module.exports={
     titles:router

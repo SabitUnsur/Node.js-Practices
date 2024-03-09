@@ -33,7 +33,7 @@ const connectToDb = async () => {
 
     client.on('message',async msg=>{
         console.log(msg)
-        await MESSAGES.create({
+        await MESSAGES.create({ //mesajı db'ye kaydeder
             default: 'sticker received',
             from:msg.from,
             messageContent:msg.body

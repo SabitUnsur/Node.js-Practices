@@ -19,6 +19,9 @@ const CompanyValidator = {
     },
     validateFindById(){
         return [param('id').isMongoId().withMessage('Invalid company id')]
+    },
+    validateGetPersons(){
+        return [param('id').isMongoId()]
     }
 }
 
