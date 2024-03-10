@@ -14,9 +14,18 @@ export const connectWebSocket = () => {
         extraHeaders:{
         "my-custom-header":"1234"
         }})
+    socket.on('onConnect', (data) => {
+        console.log('data',data)
+        window.socketID = data.socketID
+    })
     socket.on('hey', (data) => {
         console.log('data',data)
     })
+
+    socket.on('message',(data) => {
+        console.log('Spesifik Mesaj = ',data)
+    })
+
     socket.once('time',logToConsole)
     //socket.off('time',logToConsole)
     //socket.removeListener('time')
