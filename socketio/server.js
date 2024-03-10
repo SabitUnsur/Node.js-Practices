@@ -2,7 +2,12 @@ const express = require('express')
 const socketIO = require('./socket')
 const app = express()
 const router = express.Router()
+const cors = require('cors')
 app.use(router)
+app.use(express.json())
+app.use(cors())
+
+let arr = []
 
 let clients = []
 let rooms = {
@@ -10,6 +15,7 @@ let rooms = {
     roomB: [],
 }
 
+let connectionUsers = []
 let data = []
 
 const server = app.listen(5000, () => {
@@ -17,19 +23,36 @@ const server = app.listen(5000, () => {
 })
 
 router.get('/', (req, res) => { 
-    res.send('Server is up and running')
+    res.json({data:arr})
+    socketIO.getIO().sockets.emit('newRecord',{id:req.query.id, text:req.query.text}) 
+})//socket.io ile bağlantı kurulduktan sonra, yeni bir kayıt eklendiğinde, tüm istemcilere yeni kaydı göndermek için kullanılır. 
+//getIO : socket.io'nun içindeki io nesnesine erişmek için kullanılır ve bu nesne, tüm istemcilerle iletişim kurmak için kullanılır.
+
+
+router.get('/sendPhoto', (req, res) => { 
+    res.json({data:arr})
+    socketIO.getIO().sockets.emit('broadcastPhoto',{id:req.query.id, photo:req.query.photo}) 
 })
 
 const io = socketIO.init(server)
 
 io.on('connection', (socket) => { 
 
+    connectionUsers.push({socketId:socket.id,connectionTime: Date.now()})
+
     clients.push({socketId:socket.id})
 
     console.log(socket.handshake.headers)
     console.log('Socket connection established', socket.id) //buranın bir client yani react vs. tarafından bağlanılması gerekiyor
    // console.log(socket.handshake) handshake nedir? -> cevap : handshake, socket.io'nun bir parçasıdır ve bağlantı sırasında kullanıcıdan gelen verileri içerir.
+
     socket.on("disconnect", (reason) => {
+       let arr = [...connectionUsers]
+       let findedDisconnectUser= arr.find((item)=> item.socketId === socket.id)
+       findedDisconnectUser.disconnectionTime = Date.now()
+       findedDisconnectUser.time = findedDisconnectUser.disconnectionTime - findedDisconnectUser.connectionTime
+       connectionUsers = arr.filter((item) => item.socketId !== socket.id) 
+
         console.log(reason)
         console.log('Socket disconnected', socket.id)
         let roomA = rooms.roomA.filter((item)=> item !== socket.id)
