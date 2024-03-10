@@ -28,4 +28,8 @@ io.on('connection', (socket) => {
     socket.on('client',(data)=>{
         console.log(data)
     })
+
+    setInterval(()=>{
+        socket.emit('time', Date.now())
+    },1000)
 })
