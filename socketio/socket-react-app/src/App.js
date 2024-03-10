@@ -32,10 +32,16 @@ function App() {
             },
         ],
     })
-
+    const [photo,setPhoto]= useState('')
   const [socketInput, setSocketInput] = useState('');
   useEffect(() => {
     connectWebSocket()
+      socket.on('broadcastPhoto',(data)=>{
+          if(data.id !== window.socketID){
+              setPhoto(data.photo)
+          }
+      })// serverdan gelen broadcastPhoto eventini dinliyoruz
+
       socket.on('dataResult',(dataSet)=>{
           let _data = data.datasets[0].data
           for (let i = 0; i < _data.length; i++) {
@@ -94,6 +100,26 @@ function App() {
           </button>
 
           <button onClick={() => {
+              fetch('http://localhost:5000?text=Merhaba&id=' + window.socketID).then((res) => {
+                  res.json()
+              }).then((data) => {
+                  console.log('data', data)
+              }) // servera get request atıyoruz
+
+          }}>Kayıt Oluştur
+          </button>
+
+          <button onClick={() => {
+              fetch('http://localhost:5000/sendPhoto/?photo=https://unsplash.com/photos/a-group-of-birds-flying-over-a-body-of-water-gb3Nq47v4GA&id=' + window.socketID).then((res) => {
+                  res.json()
+              }).then((data) => {
+                  console.log('data', data)
+              })
+
+          }}>Fotoğraf Gönder
+          </button>
+
+          <button onClick={() => {
               socket.emit('message room', {room: 'roomA', message: 'Merhaba roomA!'})
           }}>A odasına mesaj gönder
           </button>
@@ -104,6 +130,8 @@ function App() {
               </div>
           </div>
 
+          <img src={photo} alt="photo" style={{width: "500px", height: "500px"}}/>
+          {/* serverdan gelen photoyu gösteriyoruz  */}
       </>
   );
 }

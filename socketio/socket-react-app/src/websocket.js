@@ -6,6 +6,21 @@ const SERVER = 'http://localhost:5000'
 const logToConsole = (data) => {
     console.log(data)
 }
+
+function notify(text){
+    if(Notification.permission === 'granted'){
+       Notification.requestPermission()
+    }
+    else{
+        var notification = new Notification('hello', {
+            body: 'Hey, yeni bir kayıt olustu, içeriğe bir göz at!' + text
+        })
+        notification.onclick = function (){
+            window.open('http://www.google.com')
+        }
+    }
+}
+
 export const connectWebSocket = () => {
     socket = socketClient(SERVER,{
         timeout:50000,
@@ -51,6 +66,13 @@ export const connectWebSocket = () => {
     //socket.off('time',logToConsole)
     //socket.removeListener('time')
     //removeAllListeners()
+
+    socket.on('newRecord', (data) => {
+        if(data.id !== window.socketID) {
+            notify(data.text)
+            console.log('Yeni bir kayıt olustu'+ data.text)
+        }
+    })// serverdan gelen newRecord eventini dinliyoruz
 }
 
 export {socket}
