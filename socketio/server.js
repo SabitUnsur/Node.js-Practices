@@ -10,6 +10,8 @@ let rooms = {
     roomB: [],
 }
 
+let data = []
+
 const server = app.listen(5000, () => {
   console.log('Server is running on port 5000')
 })
@@ -59,6 +61,14 @@ io.on('connection', (socket) => {
         rooms[roomName].push(socket.id)
         io.sockets.emit('joinedRoom',rooms)
      })
+
+     setInterval(()=>{
+        data = []
+        for(let i = 0; i < 6; i++){
+            data.push(Math.floor((Math.random() * 1000) + 1))
+        }
+        socket.emit('dataResult',data)
+     },5000)
 
      socket.on('message room',(data)=>{
         io.to(data.room).emit('roomMessage',data.message)
