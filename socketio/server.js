@@ -5,8 +5,8 @@ const router = express.Router()
 app.use(router)
 
 
-const server = app.listen(3000, () => {
-  console.log('Server is running on port 3000')
+const server = app.listen(5000, () => {
+  console.log('Server is running on port 5000')
 })
 
 router.get('/', (req, res) => { 
@@ -35,6 +35,11 @@ io.on('connection', (socket) => {
         console.log(data)
         io.to(data.socketId).emit('message',data.message)
     })
+
+    socket.on('publicMessage',(data)=>{ 
+        socket.broadcast.emit('publicMessage',data)
+        io.sockets.emit('publicMessage2',data) //2.yol
+    }) //publicMessage, tüm istemcilere gönderilir.
 
     setInterval(()=>{
         socket.emit('time', Date.now())
