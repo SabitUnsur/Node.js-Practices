@@ -23,10 +23,17 @@ io.on('connection', (socket) => {
         console.log('Socket disconnected', reason)
     })
 
+    socket.emit('onConnect',socket.id)
+
     socket.emit('hey','hi, this is a message from server, the time you connected to socket ' + Date.now()) //serverdan clienta mesaj gönderme
 
     socket.on('client',(data)=>{
         console.log(data)
+    })
+
+    socket.on('sendCustomMessage',(data)=>{ 
+        console.log(data)
+        io.to(data.socketId).emit('message',data.message)
     })
 
     setInterval(()=>{
