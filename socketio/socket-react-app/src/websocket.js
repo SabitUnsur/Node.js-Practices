@@ -35,11 +35,19 @@ export const connectWebSocket = () => {
         }
     })
 
+    socket.on('joinedRoom',(data)=>{
+        console.log('data',data)
+    })
+
+    socket.on('roomMessage',(data)=>{
+        console.log('data',data)
+    })
+
     socket.on('message',(data) => {
         console.log('Spesifik Mesaj = ',data)
     })
 
-    socket.once('time',logToConsole)
+    //socket.once('time',logToConsole)
     //socket.off('time',logToConsole)
     //socket.removeListener('time')
     //removeAllListeners()
