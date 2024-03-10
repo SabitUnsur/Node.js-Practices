@@ -4,6 +4,11 @@ const app = express()
 const router = express.Router()
 app.use(router)
 
+let clients = []
+let rooms = {
+    roomA: [],
+    roomB: [],
+}
 
 const server = app.listen(5000, () => {
   console.log('Server is running on port 5000')
@@ -16,11 +21,18 @@ router.get('/', (req, res) => {
 const io = socketIO.init(server)
 
 io.on('connection', (socket) => { 
+
+    clients.push({socketId:socket.id})
+
     console.log(socket.handshake.headers)
     console.log('Socket connection established', socket.id) //buranın bir client yani react vs. tarafından bağlanılması gerekiyor
    // console.log(socket.handshake) handshake nedir? -> cevap : handshake, socket.io'nun bir parçasıdır ve bağlantı sırasında kullanıcıdan gelen verileri içerir.
     socket.on("disconnect", (reason) => {
-        console.log('Socket disconnected', reason)
+        console.log(reason)
+        console.log('Socket disconnected', socket.id)
+        let roomA = rooms.roomA.filter((item)=> item !== socket.id)
+        rooms={...rooms, roomA:roomA} //roomA'dan çıkan kullanıcıyı silme
+        io.sockets.emit('joinedRoom',rooms)
     })
 
     socket.emit('onConnect',socket.id)
@@ -41,7 +53,15 @@ io.on('connection', (socket) => {
         io.sockets.emit('publicMessage2',data) //2.yol
     }) //publicMessage, tüm istemcilere gönderilir.
 
-    setInterval(()=>{
-        socket.emit('time', Date.now())
-    },1000)
+
+    socket.on('join room',(roomName)=>{
+        socket.join(roomName) //socket.join, bir odaya katılmak için kullanılır.
+        rooms[roomName].push(socket.id)
+        io.sockets.emit('joinedRoom',rooms)
+     })
+
+     socket.on('message room',(data)=>{
+        io.to(data.room).emit('roomMessage',data.message)
+     })
+
 })
